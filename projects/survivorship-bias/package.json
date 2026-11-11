@@ -1,0 +1,10 @@
+{
+  "name": "science-video-survivorship-bias",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.9.23 preview --background",
+    "check": "npx --yes hyperframes@0.9.23 check --json",
+    "render": "npx --yes hyperframes@0.9.23 render --fps 30 --quality delivery --low-memory-mode -o render-raw.mp4"
+  }
+}

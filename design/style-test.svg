@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="只采访完成者时，部分原报名者的经历未被记录。教学示意，非调查数据。">
+<style>@font-face{font-family:SampleSans;src:url('../projects/survivorship-bias/assets/fonts/msyh.ttc')}@font-face{font-family:SampleSong;src:url('../projects/survivorship-bias/assets/fonts/simsun.ttc')}html,body{margin:0;width:1280px;height:720px;overflow:hidden;background:#040812}svg{display:block}.sans{font-family:SampleSans,sans-serif;font-weight:400}.serif{font-family:SampleSong,serif}.heading{font-size:37px;letter-spacing:2px;font-weight:700}.label{font-size:25px}.caption{font-size:33px;letter-spacing:1px}</style><defs>
+ <radialGradient id="bg"><stop stop-color="#101d31"/><stop offset=".58" stop-color="#0a1221"/><stop offset="1" stop-color="#040812"/></radialGradient>
+ <radialGradient id="bluefog"><stop stop-color="#71c9e4" stop-opacity=".12"/><stop offset="1" stop-color="#71c9e4" stop-opacity="0"/></radialGradient>
+ <radialGradient id="warmfog"><stop stop-color="#ecac94" stop-opacity=".13"/><stop offset="1" stop-color="#ecac94" stop-opacity="0"/></radialGradient>
+ <linearGradient id="wire"><stop stop-color="#80cddd" stop-opacity=".28"/><stop offset=".8" stop-color="#a1e9f2" stop-opacity=".9"/><stop offset="1" stop-color="#e7b39f" stop-opacity=".7"/></linearGradient>
+ <linearGradient id="record"><stop stop-color="#102434" stop-opacity=".4"/><stop offset="1" stop-color="#142331" stop-opacity=".08"/></linearGradient>
+ <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="7"/></filter>
+ <filter id="fineglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+ <g id="person" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cy="-12" r="9"/><path d="M-19 22v-6c0-11 8-16 19-16s19 5 19 16v6"/><path d="M-10 25h20" opacity=".4"/></g>
+ <g id="check" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="m-5 0 3 3 7-7"/></g>
+ <g id="doc" fill="none" stroke-linejoin="round" stroke-linecap="round"><path d="M-44-39h64l22 22v57h-86z"/><path d="M20-39v22h22"/><path d="M-25-10h29M-25 5h47M-25 20h32" opacity=".6"/></g>
+</defs>
+<rect width="1280" height="720" fill="url(#bg)"/>
+<ellipse cx="960" cy="345" rx="330" ry="240" fill="url(#bluefog)"/>
+<ellipse cx="748" cy="337" rx="145" ry="180" fill="url(#warmfog)"/>
+<text class="serif heading" x="640" y="100" text-anchor="middle" fill="#f2f4f5">只采访完成者，会漏掉谁？</text>
+<!-- This contour is the original population, not a percentage chart. -->
+<path d="M155 212v-14q0-19 19-19h118M437 179h147q19 0 19 19v14M155 446v18q0 19 19 19h410q19 0 19-19v-18" fill="none" stroke="#6b91a3" stroke-opacity=".4" stroke-width="1.3"/>
+<text class="sans label" x="365" y="188" text-anchor="middle" fill="#a9c0cc">最初报名者</text>
+<!-- Interview connections preserve the identity of the selected people. -->
+<g fill="none" stroke="url(#wire)" stroke-width="1.8"><path d="M553 283H950"/><path d="M553 413H950"/></g>
+<g fill="none" stroke="#82ddeb" stroke-width="5" opacity=".18" filter="url(#fineglow)"><path d="M553 283H950"/><path d="M553 413H950"/></g>
+<path d="M715 231V208q0-12 12-12h60q12 0 12 12v23M715 466v15q0 12 12 12h60q12 0 12-12v-15" fill="none" stroke="#d99d87" stroke-opacity=".55" stroke-width="1.5"/>
+<text class="sans label" x="756" y="171" text-anchor="middle" fill="#e6ad98">只采访完成者</text>
+<g stroke="#e0a38d" stroke-width="1.3" fill="#0d1725"><circle cx="756" cy="283" r="12"/><circle cx="756" cy="413" r="12"/></g>
+<g stroke="#efc1ac" stroke-width="1.7"><use href="#check" x="756" y="283"/><use href="#check" x="756" y="413"/></g>
+<circle cx="235" cy="283" r="33" fill="none" stroke="#657e94" stroke-opacity=".5" stroke-dasharray="3 5"/><use href="#person" x="235" y="283" stroke="#849bad" stroke-width="1.8"/><text class="sans" x="263" y="310" fill="#7e95a7" font-size="20">?</text><circle cx="375" cy="283" r="33" fill="none" stroke="#657e94" stroke-opacity=".5" stroke-dasharray="3 5"/><use href="#person" x="375" y="283" stroke="#849bad" stroke-width="1.8"/><text class="sans" x="403" y="310" fill="#7e95a7" font-size="20">?</text><circle cx="520" cy="283" r="32" fill="#6bc9df" opacity=".2" filter="url(#glow)"/><circle cx="520" cy="283" r="33" fill="#0c202e" stroke="#8cd8e9" stroke-opacity=".48" stroke-width="1.3"/><use href="#person" x="520" y="283" stroke="#b1eaf0" stroke-width="2.1"/><circle cx="547" cy="307" r="10" fill="#182d3a" stroke="#8bd5df" stroke-width="1.2"/><use href="#check" x="547" y="307" stroke="#b8eef0" stroke-width="1.6"/><circle cx="235" cy="413" r="33" fill="none" stroke="#657e94" stroke-opacity=".5" stroke-dasharray="3 5"/><use href="#person" x="235" y="413" stroke="#849bad" stroke-width="1.8"/><text class="sans" x="263" y="440" fill="#7e95a7" font-size="20">?</text><circle cx="375" cy="413" r="33" fill="none" stroke="#657e94" stroke-opacity=".5" stroke-dasharray="3 5"/><use href="#person" x="375" y="413" stroke="#849bad" stroke-width="1.8"/><text class="sans" x="403" y="440" fill="#7e95a7" font-size="20">?</text><circle cx="520" cy="413" r="32" fill="#6bc9df" opacity=".2" filter="url(#glow)"/><circle cx="520" cy="413" r="33" fill="#0c202e" stroke="#8cd8e9" stroke-opacity=".48" stroke-width="1.3"/><use href="#person" x="520" y="413" stroke="#b1eaf0" stroke-width="2.1"/><circle cx="547" cy="437" r="10" fill="#182d3a" stroke="#8bd5df" stroke-width="1.2"/><use href="#check" x="547" y="437" stroke="#b8eef0" stroke-width="1.6"/>
+<text class="sans" x="305" y="350" text-anchor="middle" fill="#b2c2ce" font-size="23">未被采访</text>
+<path d="M305 359v18" stroke="#5e788e" stroke-width="1"/>
+<text class="sans" x="520" y="350" text-anchor="middle" fill="#9cdeeb" font-size="23">完成打卡</text>
+<text class="sans label" x="1000" y="215" text-anchor="middle" fill="#a7c3d0">访谈记录</text>
+<g transform="translate(1000 283)" stroke="#8cd7e6" stroke-width="1.6"><rect x="-45" y="-40" width="90" height="81" fill="url(#record)" stroke="none"/><use href="#doc"/></g>
+<g transform="translate(1000 413)" stroke="#8cd7e6" stroke-width="1.6"><rect x="-45" y="-40" width="90" height="81" fill="url(#record)" stroke="none"/><use href="#doc"/></g>
+<circle cx="933" cy="283" r="3" fill="#b9f2f6"/><circle cx="933" cy="413" r="3" fill="#b9f2f6"/>
+<circle cx="933" cy="283" r="9" fill="#a9eaf2" opacity=".4" filter="url(#fineglow)"/><circle cx="933" cy="413" r="9" fill="#a9eaf2" opacity=".4" filter="url(#fineglow)"/>
+<text class="sans" x="365" y="524" text-anchor="middle" fill="#7f98aa" font-size="22">未被采访者的经历，仍待了解</text>
+<text class="serif caption" x="640" y="600" text-anchor="middle" fill="#edf3f5">完成者的经历被听见，</text>
+<text class="serif caption" x="640" y="648" text-anchor="middle" fill="#edf3f5">未完成者的经历<tspan fill="#eab29a">被漏掉</tspan>。</text>
+<text class="sans" x="1224" y="685" text-anchor="end" fill="#7e91a4" font-size="17">教学示意，非调查数据</text>
+</svg>

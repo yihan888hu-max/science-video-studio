@@ -1,0 +1,195 @@
+{
+  "scope": "Initial reviewed source and documentation; local assets are excluded",
+  "files": [
+    {
+      "path": ".agents/skills/science-video/SKILL.md",
+      "bytes": 1458,
+      "sha256": "2faa695e6eb081fc8da6930c3164aadbcaf28bca7576e163f38cb152d54d095b"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 438,
+      "sha256": "d7e3fe540cf320955863219fa220ca3be44e279e7af99c5c0843bf68e79ee27d"
+    },
+    {
+      "path": "design/style-test.html",
+      "bytes": 7305,
+      "sha256": "225efb5230c2e3014fa904d9b56620c5a5087705e02d37e7dbfe186303b29d49"
+    },
+    {
+      "path": "design/style-test.svg",
+      "bytes": 7164,
+      "sha256": "d223f58229969146880e0326cf03decc74101712c3a882a1ab3c70a91a9709a5"
+    },
+    {
+      "path": "docs/archive/DAILY_EXAMPLES.md",
+      "bytes": 7412,
+      "sha256": "02f00f6456aa34dc5e4ec8e643312f2ada47a2e8e9458bb0ec2fbce1d94a48a3"
+    },
+    {
+      "path": "docs/archive/RESEARCH_NOTES.md",
+      "bytes": 5259,
+      "sha256": "76f508ef550a574b0870db20f01229efad7d559ae21efe001c74576cf82c975a"
+    },
+    {
+      "path": "docs/archive/STYLE_DECISIONS.md",
+      "bytes": 2097,
+      "sha256": "9074730eee13a0b8ea4a94153b95622ade235f99b478cb883ef65b5263c01c2d"
+    },
+    {
+      "path": "docs/archive/WORKFLOW_HISTORY.md",
+      "bytes": 4857,
+      "sha256": "79d2de479e8fc8d10625d1ca355b2ca8b16430f973930658da0f3556b5cd8348"
+    },
+    {
+      "path": "docs/ASSETS.md",
+      "bytes": 1209,
+      "sha256": "85b6fecae475449e0d777c6f6a97ffe1d427e9e9ae7b500ff078185db5f55c18"
+    },
+    {
+      "path": "docs/CHANGELOG.md",
+      "bytes": 936,
+      "sha256": "f071de5307172b4fd467bc126070861167e154a39f0c4bb7b9c00391bd0e1a9f"
+    },
+    {
+      "path": "docs/ENVIRONMENT.md",
+      "bytes": 849,
+      "sha256": "b9a15a127105e324859c44fbfff15d2e83b002580d285b4f3597b4b0db2ea296"
+    },
+    {
+      "path": "docs/knowledge/FACT_CHECK.md",
+      "bytes": 4548,
+      "sha256": "f610d7dce5afe2b56ff744a9fea302b76e4c2169749513c9edf6d0785e64fa17"
+    },
+    {
+      "path": "docs/knowledge/KNOWLEDGE.md",
+      "bytes": 6322,
+      "sha256": "f21bdc5b08814b1cde28d8a80b322643554dbe666d2fc8e2bc6832fb129a7785"
+    },
+    {
+      "path": "docs/planning/MOTION_DIRECTION.md",
+      "bytes": 11581,
+      "sha256": "83f0a8d5a0bb6f560d39e94d24cc134cd06add0034c7dd54073f4ab1b95183c5"
+    },
+    {
+      "path": "docs/planning/REFERENCE_STYLE.md",
+      "bytes": 5603,
+      "sha256": "5f6b82b5ab8cce37e0f7dc9ed1373163eb8b55e07b9bba71bf187bd1bfbeaacd"
+    },
+    {
+      "path": "docs/planning/SCRIPT_STANDARD.md",
+      "bytes": 8432,
+      "sha256": "aafc480909a47531e5a73a262d1fd9d438a77768f483a662b5836b7be1cc6fcd"
+    },
+    {
+      "path": "docs/planning/SCRIPT_V3.md",
+      "bytes": 23565,
+      "sha256": "8ff3fe9a22b841ba99130421ab37cec5c3d8d25409e268c828f1c568caff4fb8"
+    },
+    {
+      "path": "docs/PROJECT_SUMMARY.md",
+      "bytes": 7226,
+      "sha256": "5df9b731851d7f735b38da2044571fe74e62faeeb24fb6d77bcdd5aba72a7a11"
+    },
+    {
+      "path": "docs/QA.md",
+      "bytes": 1101,
+      "sha256": "45b4241a922acb176227a53a5bc9de34037fcc885bdef307e96bd7024fd0258d"
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "bytes": 1017,
+      "sha256": "5d1088c304b5936ddb44b17e4ce38d6bf3dd9766df78d0f218d308b32420aee6"
+    },
+    {
+      "path": "docs/WORKFLOW.md",
+      "bytes": 1457,
+      "sha256": "b7533323900c2ce5916faea831dc81117a10d5533b8e1aedf3b568026ce5b1d1"
+    },
+    {
+      "path": "previews/motion-contact-sheet.png",
+      "bytes": 1018098,
+      "sha256": "92069bbbe37099d555bdbaf9e5fb20d9078b99c3e6af8ad72756776764649866"
+    },
+    {
+      "path": "previews/style-test.png",
+      "bytes": 428710,
+      "sha256": "2af0ac18f0b6bfede565e713cbc8e61e7c82fafb78930ce3007a982b645904c7"
+    },
+    {
+      "path": "projects/survivorship-bias/assets/vector-definitions.svg",
+      "bytes": 1543,
+      "sha256": "fb9d8b3b5dc1e94d1ba3f6ec4749dd3aafb6feedc40d26de2252fd2337f3a583"
+    },
+    {
+      "path": "projects/survivorship-bias/build_motion.py",
+      "bytes": 14726,
+      "sha256": "3a5ef2e434021c62a07c5df972535c4c8dcdda176b358bb4753cb5361cafc5f9"
+    },
+    {
+      "path": "projects/survivorship-bias/camera-keyframes.json",
+      "bytes": 1458,
+      "sha256": "b8f4be39cf146bb754281db2b82752f2dccbf5865ec42968ec406264d563ec20"
+    },
+    {
+      "path": "projects/survivorship-bias/compositions/journey.html",
+      "bytes": 19955,
+      "sha256": "54e66fdb803fdeb31815d226d94edb5809ad07fa50d1290831c6c34c13b80155"
+    },
+    {
+      "path": "projects/survivorship-bias/drawing.py",
+      "bytes": 3406,
+      "sha256": "725c8aabac144ada5449de2bb94fdda21efaafc73132cfe1c50412fa5f96d090"
+    },
+    {
+      "path": "projects/survivorship-bias/hyperframes.json",
+      "bytes": 366,
+      "sha256": "687e5c4a0a6ff969a5f316158089fb408f0c2d8f989d19e47289f7aa34a18d24"
+    },
+    {
+      "path": "projects/survivorship-bias/index.html",
+      "bytes": 2703,
+      "sha256": "908874a2fd4220d1c5d3dc2cb51f02ddf1d6eced2e880f6133abe1e72f30b5a2"
+    },
+    {
+      "path": "projects/survivorship-bias/local-assets.example.json",
+      "bytes": 1187,
+      "sha256": "ea3fe1fe46c42cb7cf9aadba32e9f01783a91d605b95b9b9ea0ce79a003fd03c"
+    },
+    {
+      "path": "projects/survivorship-bias/meta.json",
+      "bytes": 87,
+      "sha256": "05b3bc7e4c7d47f9f4cb17e7589d18b3816ce7efe33494810a4012c3c28e22e9"
+    },
+    {
+      "path": "projects/survivorship-bias/MOTION-SPEC.md",
+      "bytes": 1213,
+      "sha256": "96ce5c11b512d7ab8a76aa8c15a2be5ad41495463fefd6cfea1b15ffa2a41dd0"
+    },
+    {
+      "path": "projects/survivorship-bias/package.json",
+      "bytes": 355,
+      "sha256": "f8da237533aa8adc11df0cb77bcca217586098d6fd31096d9dbc85b8639ed200"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2416,
+      "sha256": "0d430fb02c6c6b873158d66c6679fb397c7df54f26e273baddfe600274affe6a"
+    },
+    {
+      "path": "scripts/prepare_assets.py",
+      "bytes": 1758,
+      "sha256": "a553a5769e29a6fd83eade18ea102fb4be1c3e41172f8af7d039bf6aaa572674"
+    },
+    {
+      "path": "scripts/verify_package.py",
+      "bytes": 2767,
+      "sha256": "368fd3aa176045fcae14661142d4009e82ba6484cc89fc3b255de06150cb4ea4"
+    },
+    {
+      "path": "SUBMISSION_REVIEW.md",
+      "bytes": 1494,
+      "sha256": "a37e11f65a48bf5a13bee0e5ef409e036af360e95aecf900c8dc3be1976ad014"
+    }
+  ]
+}

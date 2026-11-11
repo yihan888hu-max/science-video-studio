@@ -1,0 +1,12 @@
+<defs>
+ <radialGradient id="bg"><stop stop-color="#101d31"/><stop offset=".58" stop-color="#0a1221"/><stop offset="1" stop-color="#040812"/></radialGradient>
+ <radialGradient id="bluefog"><stop stop-color="#71c9e4" stop-opacity=".12"/><stop offset="1" stop-color="#71c9e4" stop-opacity="0"/></radialGradient>
+ <radialGradient id="warmfog"><stop stop-color="#ecac94" stop-opacity=".13"/><stop offset="1" stop-color="#ecac94" stop-opacity="0"/></radialGradient>
+ <linearGradient id="wire"><stop stop-color="#80cddd" stop-opacity=".28"/><stop offset=".8" stop-color="#a1e9f2" stop-opacity=".9"/><stop offset="1" stop-color="#e7b39f" stop-opacity=".7"/></linearGradient>
+ <linearGradient id="record"><stop stop-color="#102434" stop-opacity=".4"/><stop offset="1" stop-color="#142331" stop-opacity=".08"/></linearGradient>
+ <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="7"/></filter>
+ <filter id="fineglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+ <g id="person" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cy="-12" r="9"/><path d="M-19 22v-6c0-11 8-16 19-16s19 5 19 16v6"/><path d="M-10 25h20" opacity=".4"/></g>
+ <g id="check" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="m-5 0 3 3 7-7"/></g>
+ <g id="doc" fill="none" stroke-linejoin="round" stroke-linecap="round"><path d="M-44-39h64l22 22v57h-86z"/><path d="M20-39v22h22"/><path d="M-25-10h29M-25 5h47M-25 20h32" opacity=".6"/></g>
+</defs>

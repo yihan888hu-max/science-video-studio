@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "reviewed_files": 38,
+  "declared_assets": 6,
+  "local_assets_present": 6,
+  "require_assets": true,
+  "errors": [],
+  "github_uploaded": false,
+  "scope": "Source/package validation; no fresh render or subjective AV review claimed"
+}

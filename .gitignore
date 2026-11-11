@@ -1,0 +1,30 @@
+# Generated output and dependencies
+node_modules/
+.hyperframes/
+.thumbnails/
+.waveform-cache/
+__pycache__/
+*.pyc
+*.log
+*.zip
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.ogg
+*.ttc
+*.ttf
+*.otf
+*.woff
+*.woff2
+# User-provided local runtimes and media
+projects/**/assets/js/gsap.min.js
+projects/**/assets/audio/
+# Credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+*token*.json

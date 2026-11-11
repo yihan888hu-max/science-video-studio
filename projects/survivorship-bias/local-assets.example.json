@@ -1,0 +1,35 @@
+{
+  "description": "Local media/runtime dependencies. Not included in Git-tracked files. Copy from an authorized local project using scripts/prepare_assets.py.",
+  "assets": [
+    {
+      "path": "assets/fonts/msyh.ttc",
+      "bytes": 19704352,
+      "sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f"
+    },
+    {
+      "path": "assets/fonts/simsun.ttc",
+      "bytes": 18316748,
+      "sha256": "1526ac24375f51f6eb73bc2d3f8072dbe4a80a3a65217677c9d9a84f67dab2ab"
+    },
+    {
+      "path": "assets/js/gsap.min.js",
+      "bytes": 72927,
+      "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+    },
+    {
+      "path": "assets/audio/We Never vibebgm.mp3",
+      "bytes": 5998757,
+      "sha256": "9ab25382c3079dee51852542bae473964d2cfa7d183012e455a6e751d3c91756"
+    },
+    {
+      "path": "assets/audio/whoosh-short.mp3",
+      "bytes": 18390,
+      "sha256": "c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30"
+    },
+    {
+      "path": "assets/audio/pop.mp3",
+      "bytes": 23040,
+      "sha256": "19ab7193f626ff57fdeef60b45543bac416fcbcec803cfb417abe4b271c1b352"
+    }
+  ]
+}

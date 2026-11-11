@@ -19,14 +19,17 @@ for entry in entries:
         continue
     data = path.read_bytes()
     if hashlib.sha256(data).hexdigest() != entry["sha256"]:
-        errors.append("Changed reviewed file: " + entry["path"])
-    if path.suffix in {".py", ".json", ".md", ".html", ".svg"}:
+        errors.append("Changed packaged file: " + entry["path"])
+    if path.suffix in {".py", ".json", ".md", ".html", ".svg", ".ts", ".tsx", ".mjs", ".yaml", ".yml", ".csv"}:
         content = data.decode("utf-8-sig")
         if path.suffix == ".py":
             ast.parse(content, filename=entry["path"])
         elif path.suffix == ".json":
             json.loads(content)
-        if re.search(r"(?:C:[/\\]Users[/\\]|E:[/\\])", content, flags=re.I):
+        if re.search(r"(?<![A-Za-z0-9_])(?:C:[/\\]Users[/\\]|E:[/\\])", content, flags=re.I):
+            errors.append("Machine-specific path: " + entry["path"])
+        local_prefix = "/" + "Users" + "/"
+        if re.search(re.escape(local_prefix) + r"[^/\s]+/", content):
             errors.append("Machine-specific path: " + entry["path"])
         if re.search(r"gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|-----BEGIN (?:RSA |OPENSSH )?PRIVATE KEY-----", content):
             errors.append("Potential credential: " + entry["path"])
@@ -42,10 +45,10 @@ for asset in assets:
         errors.append("Local asset incorrectly tracked")
 if args.require_assets and missing:
     errors.append("Missing local assets: " + ", ".join(missing))
-report = {"ok": not errors, "reviewed_files": len(entries), "declared_assets": len(assets),
+report = {"ok": not errors, "validated_files": len(entries), "declared_assets": len(assets),
           "local_assets_present": len(assets)-len(missing), "require_assets": args.require_assets,
-          "errors": errors, "github_uploaded": False,
-          "scope": "Source/package validation; no fresh render or subjective AV review claimed"}
+          "errors": errors, "phase": "pre-push package validation",
+          "scope": "Source/package validation; per-project render and AV checks are recorded separately"}
 (root / "validation-report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
 print(json.dumps(report, ensure_ascii=False, indent=2))
 raise SystemExit(0 if report["ok"] else 1)

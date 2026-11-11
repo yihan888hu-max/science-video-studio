@@ -1,0 +1,24 @@
+[
+  {
+    "title": "2025年高点",
+    "start": "2025-11-12",
+    "end": "2025-12-30",
+    "low": 8.26,
+    "high": 33.88,
+    "amplitudePct": 310.1695,
+    "closeReturnPct": 253.8915,
+    "tradingSessions": 35,
+    "calendarDays": 48
+  },
+  {
+    "title": "跨年延伸高点",
+    "start": "2025-11-12",
+    "end": "2026-01-12",
+    "low": 8.26,
+    "high": 40.65,
+    "amplitudePct": 392.1308,
+    "closeReturnPct": 371.6981,
+    "tradingSessions": 42,
+    "calendarDays": 61
+  }
+]

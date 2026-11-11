@@ -1,10 +1,10 @@
 {
   "ok": true,
-  "reviewed_files": 38,
+  "validated_files": 127,
   "declared_assets": 6,
-  "local_assets_present": 6,
-  "require_assets": true,
+  "local_assets_present": 0,
+  "require_assets": false,
   "errors": [],
-  "github_uploaded": false,
-  "scope": "Source/package validation; no fresh render or subjective AV review claimed"
+  "phase": "pre-push package validation",
+  "scope": "Source/package validation; per-project render and AV checks are recorded separately"
 }

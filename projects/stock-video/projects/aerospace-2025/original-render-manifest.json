@@ -1,0 +1,34 @@
+{
+  "src/StockMotionVideo.tsx": {
+    "sha256": "6d35e3269d1f2de577fad0cc00405b5d8d56fb759f28b074cc223bf5be6e2b2b",
+    "bytes": 15115
+  },
+  "src/stock-videos/aerospace-2025-v1.json": {
+    "sha256": "17c979fd79027b8c9aff8ba5b74e70073823d410633490d07e870a1074a224e9",
+    "bytes": 406088
+  },
+  "scripts/stock_video/build.py": {
+    "sha256": "c02cea46257e0e48fd9019d9d5e134982070ec962e42857f7a2ebfec6072ad30",
+    "bytes": 12419
+  },
+  "scripts/stock_video/fetch.py": {
+    "sha256": "0d2cb7b7546c33d79b0ec426d7addf6a26e960e91e4863325e5c3cefbc0ec8ec",
+    "bytes": 2682
+  },
+  "projects/aerospace-2025/brief.json": {
+    "sha256": "bc985802c39d81fc77cc97bc164bfad9b4677ac6f128b27d9051662a36cd7257",
+    "bytes": 4669
+  },
+  "projects/aerospace-2025/daily.json": {
+    "sha256": "b702f21cf7b886be5f47732aba1cabacf513a4b37451d7a59bacea4d276f8f8c",
+    "bytes": 44209
+  },
+  "public/aerospace-2025-v1/mix.wav": {
+    "sha256": "cf687ef790548e82c72271ee623bef97a38cc87cd3973a79555de1844a72f593",
+    "bytes": 5760078
+  },
+  "out/aerospace-development-2025-now-v1.mp4": {
+    "sha256": "fc2776081d515b0fd25dd1d59684ec64d34cdee68b602233e6f5cad537d63ab2",
+    "bytes": 13216001
+  }
+}

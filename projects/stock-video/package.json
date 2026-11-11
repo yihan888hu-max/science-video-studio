@@ -1,0 +1,53 @@
+{
+  "name": "vibe-video",
+  "version": "1.0.0",
+  "description": "Data-driven glass candlestick films with audited market narratives",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yihan888hu-max/science-video-studio.git",
+    "directory": "projects/stock-video"
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "private": true,
+  "dependencies": {
+    "@remotion/cli": "4.0.541",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.541"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.541",
+    "@types/react": "19.3.0",
+    "@types/web": "0.0.166",
+    "eslint": "10.12.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc",
+    "preview:v2": "remotion studio",
+    "render:v2": "remotion render ShibaoReference30 out/zhejiang-shibao-reference-30s-v2.mp4 --codec=h264 --crf=18 --concurrency=4",
+    "rebuild:v2": "node scripts/stock_video/run-python.mjs scripts/build_shibao_v2.py && ffmpeg -hide_banner -loglevel error -i public/shibao-v2/mix-raw.wav -af loudnorm=I=-18:TP=-2:LRA=8 -ar 48000 -t 30 -y public/shibao-v2/mix.wav",
+    "preview:v3": "remotion studio",
+    "rebuild:v3": "node scripts/stock_video/run-python.mjs scripts/build_shibao_v3.py",
+    "render:v3": "remotion render ShibaoCandle30 out/zhejiang-shibao-candles-30s-v3.mp4 --codec=h264 --crf=18 --concurrency=4",
+    "preview:v4": "remotion studio",
+    "rebuild:v4": "node scripts/stock_video/run-python.mjs scripts/build_shibao_v4.py && ffmpeg -hide_banner -loglevel error -i public/shibao-v4/mix-raw.wav -af loudnorm=I=-17:TP=-3:LRA=7 -ar 48000 -t 30 -y public/shibao-v4/mix.wav",
+    "render:v4": "remotion render ShibaoGlass30 out/zhejiang-shibao-glass-30s-v4.mp4 --codec=h264 --crf=18 --concurrency=4",
+    "preview:v5": "remotion studio",
+    "rebuild:v5": "node scripts/stock_video/run-python.mjs scripts/build_shibao_v5.py && ffmpeg -hide_banner -loglevel error -i public/shibao-v5/mix-raw.wav -af loudnorm=I=-17:TP=-3:LRA=7 -ar 48000 -t 30 -y public/shibao-v5/mix.wav",
+    "render:v5": "remotion render ShibaoMarket30 out/zhejiang-shibao-market-30s-v5.mp4 --codec=h264 --crf=18 --concurrency=4",
+    "rebuild:aerospace": "node scripts/stock_video/run-python.mjs scripts/stock_video/build.py projects/aerospace-2025/brief.json",
+    "render:aerospace": "remotion render Aerospace2025 out/aerospace-development-2025-now-v1.mp4 --codec=h264 --crf=18 --concurrency=4",
+    "check:aerospace": "tsc --noEmit && eslint src/StockMotionVideo.tsx src/Root.tsx && node scripts/stock_video/run-python.mjs projects/aerospace-2025/research/audit.py"
+  },
+  "allowScripts": {
+    "esbuild": false
+  }
+}

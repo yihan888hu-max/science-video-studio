@@ -1,0 +1,14 @@
+import {StockMotionVideo} from './StockMotionVideo';
+import aerospace from './stock-videos/aerospace-2025-v1.json';
+import {Composition} from 'remotion';
+import {MyComponent} from './Composition';
+import {Shibao} from './Shibao';
+import {ShibaoDaily} from './ShibaoDaily';
+import {ShibaoImpact} from './ShibaoImpact';
+import {ShibaoStory30} from './ShibaoStory30';
+import {ShibaoReference30} from './ShibaoReference30';
+import {ShibaoCandle30} from './ShibaoCandle30';
+import {ShibaoGlass30} from './ShibaoGlass30';
+import {ShibaoMarket30} from './ShibaoMarket30';
+import {events} from './shibao-detect';
+export const RemotionRoot: React.FC = () => <><Composition id="ScienceDemo" component={MyComponent} durationInFrames={150} fps={30} width={1280} height={720} /><Composition id="ShibaoAnalysis" component={Shibao} durationInFrames={1050} fps={30} width={1280} height={720} /><Composition id="ShibaoDaily" component={ShibaoDaily} durationInFrames={1500} fps={30} width={1280} height={720} /><Composition id="ShibaoImpact" component={ShibaoImpact} durationInFrames={120 + events.length * 120 + 90} fps={30} width={1280} height={720} /><Composition id="ShibaoStory30" component={ShibaoStory30} durationInFrames={900} fps={30} width={1280} height={720} /><Composition id="ShibaoReference30" component={ShibaoReference30} durationInFrames={900} fps={30} width={1080} height={1920} /><Composition id="ShibaoCandle30" component={ShibaoCandle30} durationInFrames={900} fps={30} width={1080} height={1920} /><Composition id="ShibaoGlass30" component={ShibaoGlass30} durationInFrames={900} fps={30} width={1080} height={1920} /><Composition id="ShibaoMarket30" component={ShibaoMarket30} durationInFrames={900} fps={30} width={1080} height={1920} /><Composition id="Aerospace2025" component={StockMotionVideo} defaultProps={{film:aerospace}} durationInFrames={900} fps={30} width={1080} height={1920} /></>;

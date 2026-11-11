@@ -28,3 +28,14 @@ projects/**/assets/audio/
 *.key
 *credentials*.json
 *token*.json
+
+# Authored stock-video release media (user-authorized update, 2026-11-12)
+!previews/stock-video/aerospace-development-2025-now-v1.mp4
+!projects/stock-video/public/aerospace-2025-v1/mix.wav
+!projects/stock-video/public/shibao-v2/mix.wav
+!projects/stock-video/public/shibao-v4/mix.wav
+!projects/stock-video/public/shibao-v5/mix.wav
+!projects/stock-video/public/shibao-impact.wav
+projects/stock-video/out/
+projects/stock-video/dist/
+.DS_Store

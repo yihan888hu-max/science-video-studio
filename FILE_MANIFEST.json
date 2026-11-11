@@ -1,5 +1,5 @@
 {
-  "scope": "Initial reviewed source and documentation; local assets are excluded",
+  "scope": "Source, production documentation, auditable snapshots and authored release media; local references/credentials/caches excluded",
   "files": [
     {
       "path": ".agents/skills/science-video/SKILL.md",
@@ -7,9 +7,44 @@
       "sha256": "2faa695e6eb081fc8da6930c3164aadbcaf28bca7576e163f38cb152d54d095b"
     },
     {
+      "path": ".agents/skills/stock-video/SKILL.md",
+      "bytes": 2414,
+      "sha256": "149f0f40e008498b39f7fcd4621a2fb4d702f1648658994e7a304fc6c10e7347"
+    },
+    {
+      "path": ".agents/skills/stock-video/agents/openai.yaml",
+      "bytes": 306,
+      "sha256": "2b64bdd95d544e5cfc8db08827f2ac3e18720ed9b32681dfeae8b3f24e0b0237"
+    },
+    {
+      "path": ".agents/skills/stock-video/references/market-language.md",
+      "bytes": 4419,
+      "sha256": "64298a7a8ad1624de591cd2c55d9f9fb4a858f89a78084b5e12f038398c2b275"
+    },
+    {
+      "path": ".agents/skills/stock-video/references/production.md",
+      "bytes": 4223,
+      "sha256": "eb6042a593778859d92d726022ae24a6ec7ae74e5fbac7203f19e58ac25b7097"
+    },
+    {
       "path": ".gitignore",
-      "bytes": 438,
-      "sha256": "d7e3fe540cf320955863219fa220ca3be44e279e7af99c5c0843bf68e79ee27d"
+      "bytes": 890,
+      "sha256": "5afc51497acb1091c141277eff7067121cf1e4dd3990bc2012a8dbd9ec8e6398"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 757,
+      "sha256": "a2570002b97f5d03fac3428b2ba131a391c86ee10013d949fc8c6cdbf154113c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3882,
+      "sha256": "746676a8a321e7d992a2f27f55cf97decc95e5c96e513cd9ac9b6ce758432052"
+    },
+    {
+      "path": "SUBMISSION_REVIEW.md",
+      "bytes": 1306,
+      "sha256": "283078de968f60e4923ce9fbc5c86aae5d9f0938f5dfdd92cc346536e5d0a40f"
     },
     {
       "path": "design/style-test.html",
@@ -20,6 +55,41 @@
       "path": "design/style-test.svg",
       "bytes": 7164,
       "sha256": "d223f58229969146880e0326cf03decc74101712c3a882a1ab3c70a91a9709a5"
+    },
+    {
+      "path": "docs/ASSETS.md",
+      "bytes": 1209,
+      "sha256": "85b6fecae475449e0d777c6f6a97ffe1d427e9e9ae7b500ff078185db5f55c18"
+    },
+    {
+      "path": "docs/CHANGELOG.md",
+      "bytes": 1435,
+      "sha256": "9d4ffd014726dd70e69ecca60c6acebfbb4725c3771fc1565029c1b1485b5a0c"
+    },
+    {
+      "path": "docs/ENVIRONMENT.md",
+      "bytes": 849,
+      "sha256": "b9a15a127105e324859c44fbfff15d2e83b002580d285b4f3597b4b0db2ea296"
+    },
+    {
+      "path": "docs/PROJECT_SUMMARY.md",
+      "bytes": 7378,
+      "sha256": "b21848fe87e7f23c8109353c6a49f37fe5b21f93875057e955b6ecdc40fc99d6"
+    },
+    {
+      "path": "docs/QA.md",
+      "bytes": 1101,
+      "sha256": "45b4241a922acb176227a53a5bc9de34037fcc885bdef307e96bd7024fd0258d"
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "bytes": 1558,
+      "sha256": "ec100933f5079f93ee9c5a1abae2e6e8903fd734c5825ca55844a870fe1a8d10"
+    },
+    {
+      "path": "docs/WORKFLOW.md",
+      "bytes": 1673,
+      "sha256": "b5b539fcc9e5031e12949e278e8c9fef921b9e1e407941d677bf58f195afcb46"
     },
     {
       "path": "docs/archive/DAILY_EXAMPLES.md",
@@ -37,24 +107,14 @@
       "sha256": "9074730eee13a0b8ea4a94153b95622ade235f99b478cb883ef65b5263c01c2d"
     },
     {
+      "path": "docs/archive/SUBMISSION_REVIEW_2026-11-11.md",
+      "bytes": 1494,
+      "sha256": "a37e11f65a48bf5a13bee0e5ef409e036af360e95aecf900c8dc3be1976ad014"
+    },
+    {
       "path": "docs/archive/WORKFLOW_HISTORY.md",
       "bytes": 4857,
       "sha256": "79d2de479e8fc8d10625d1ca355b2ca8b16430f973930658da0f3556b5cd8348"
-    },
-    {
-      "path": "docs/ASSETS.md",
-      "bytes": 1209,
-      "sha256": "85b6fecae475449e0d777c6f6a97ffe1d427e9e9ae7b500ff078185db5f55c18"
-    },
-    {
-      "path": "docs/CHANGELOG.md",
-      "bytes": 936,
-      "sha256": "f071de5307172b4fd467bc126070861167e154a39f0c4bb7b9c00391bd0e1a9f"
-    },
-    {
-      "path": "docs/ENVIRONMENT.md",
-      "bytes": 849,
-      "sha256": "b9a15a127105e324859c44fbfff15d2e83b002580d285b4f3597b4b0db2ea296"
     },
     {
       "path": "docs/knowledge/FACT_CHECK.md",
@@ -87,24 +147,14 @@
       "sha256": "8ff3fe9a22b841ba99130421ab37cec5c3d8d25409e268c828f1c568caff4fb8"
     },
     {
-      "path": "docs/PROJECT_SUMMARY.md",
-      "bytes": 7226,
-      "sha256": "5df9b731851d7f735b38da2044571fe74e62faeeb24fb6d77bcdd5aba72a7a11"
+      "path": "docs/stock-video/PRODUCTION_DETAILS.md",
+      "bytes": 8936,
+      "sha256": "f8b6d0471c7cb2fe0a6398dd1f19fbb04d90f11f6384c1855b40dec4a4774b18"
     },
     {
-      "path": "docs/QA.md",
-      "bytes": 1101,
-      "sha256": "45b4241a922acb176227a53a5bc9de34037fcc885bdef307e96bd7024fd0258d"
-    },
-    {
-      "path": "docs/THIRD_PARTY_NOTICES.md",
-      "bytes": 1017,
-      "sha256": "5d1088c304b5936ddb44b17e4ce38d6bf3dd9766df78d0f218d308b32420aee6"
-    },
-    {
-      "path": "docs/WORKFLOW.md",
-      "bytes": 1457,
-      "sha256": "b7533323900c2ce5916faea831dc81117a10d5533b8e1aedf3b568026ce5b1d1"
+      "path": "docs/stock-video/RELEASE.md",
+      "bytes": 2616,
+      "sha256": "5c190c8902039e6c7cb2b3628b6b5a4bb8da4ddc658bce367316f6d13daf9a2d"
     },
     {
       "path": "previews/motion-contact-sheet.png",
@@ -112,9 +162,419 @@
       "sha256": "92069bbbe37099d555bdbaf9e5fb20d9078b99c3e6af8ad72756776764649866"
     },
     {
+      "path": "previews/stock-video/aerospace-development-2025-now-v1.mp4",
+      "bytes": 13216001,
+      "sha256": "fc2776081d515b0fd25dd1d59684ec64d34cdee68b602233e6f5cad537d63ab2"
+    },
+    {
+      "path": "previews/stock-video/aerospace-drawdown.png",
+      "bytes": 963885,
+      "sha256": "9efc9c1ec6568f325fd1f69f3c8a3036a2342705666b2e8aeaa48bbed923c215"
+    },
+    {
+      "path": "previews/stock-video/aerospace-peak.png",
+      "bytes": 1149995,
+      "sha256": "b1ded637b2734ee865e1a8f6bcc2b68ee52bd3d3c018b14687aec44a724cb4d1"
+    },
+    {
       "path": "previews/style-test.png",
       "bytes": 428710,
       "sha256": "2af0ac18f0b6bfede565e713cbc8e61e7c82fafb78930ce3007a982b645904c7"
+    },
+    {
+      "path": "projects/stock-video/.gitignore",
+      "bytes": 108,
+      "sha256": "d8b2fdaf982965814df13934ec5d0c5fe49f51ea8cc50559e9a7000cfd26ea03"
+    },
+    {
+      "path": "projects/stock-video/.prettierrc",
+      "bytes": 66,
+      "sha256": "10e86224d2f90945fbe57db21ac109bdb0ce9b5d7470e7b78fa5f8b6d49a1afd"
+    },
+    {
+      "path": "projects/stock-video/AGENTS.md",
+      "bytes": 522,
+      "sha256": "8d4caa1de5c83be64dc73dec4e6f37c6b1c251e70037a73fc97a6fd9a679ef7e"
+    },
+    {
+      "path": "projects/stock-video/README.md",
+      "bytes": 3943,
+      "sha256": "d74dca5b1774fd04d7f1581df843e10dcba841538f1de9829c40a7395d877a7d"
+    },
+    {
+      "path": "projects/stock-video/docs/REFERENCE-下载-1.md",
+      "bytes": 4227,
+      "sha256": "8ca3f0e85832b398a660a45753b643fffc9fcf19472ae43cf2ed7d2d1b7b98c7"
+    },
+    {
+      "path": "projects/stock-video/docs/SHIBAO-V2-使用.md",
+      "bytes": 1680,
+      "sha256": "d82b0de98b20a4121624c742363bad58d25c25da497549dc925a8167b40b2f62"
+    },
+    {
+      "path": "projects/stock-video/docs/SHIBAO-V3-使用.md",
+      "bytes": 2059,
+      "sha256": "02ae0d168bdebcb6c84784fef9e8ed0d37746ee62e947bb64d291d41b19cfa85"
+    },
+    {
+      "path": "projects/stock-video/docs/SHIBAO-V4-使用.md",
+      "bytes": 3934,
+      "sha256": "ae3de5f1ee12949d47ecf3c48996b22c32b4cbe1a90fc68b6f8e312216f84ffc"
+    },
+    {
+      "path": "projects/stock-video/docs/SHIBAO-V5-使用与核验.md",
+      "bytes": 7464,
+      "sha256": "8bc32cb3ca0cbc7f50faf7fe7a76077a1d913d30a4d24b36ed7fc4c83338814b"
+    },
+    {
+      "path": "projects/stock-video/docs/STOCK-VIDEO-PLAYBOOK.md",
+      "bytes": 3957,
+      "sha256": "e2202e022a599a90878b2011dd5b40def910c504bbe3369e4de7d7bc9a84471c"
+    },
+    {
+      "path": "projects/stock-video/eslint.config.mjs",
+      "bytes": 79,
+      "sha256": "7f2ca640409fd597965bedf929073b9a74f143643e1711150c4cac3b6ec5c80d"
+    },
+    {
+      "path": "projects/stock-video/package-lock.json",
+      "bytes": 185898,
+      "sha256": "74d110c218e23a5b888b22e3dadff0aa8f82f3b3e1806a7ffc9209f587391530"
+    },
+    {
+      "path": "projects/stock-video/package.json",
+      "bytes": 2830,
+      "sha256": "28bd46177fff570055bc2cafbe1f65a1cf9c0bfa9080a8a48ba80dcafccebab1"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/QA.md",
+      "bytes": 2701,
+      "sha256": "88d5a4f214c199a9f4a0ae0e0e6455d25d1d2337593e98e5213138a39524e168"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/brief.json",
+      "bytes": 4669,
+      "sha256": "bc985802c39d81fc77cc97bc164bfad9b4677ac6f128b27d9051662a36cd7257"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/daily.json",
+      "bytes": 44209,
+      "sha256": "b702f21cf7b886be5f47732aba1cabacf513a4b37451d7a59bacea4d276f8f8c"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/original-render-manifest.json",
+      "bytes": 1179,
+      "sha256": "2fb881e7d2e3a71fa08cca9d929411ed6dc9cc8f0ca36f1b6b72c64d209925a1"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/research/audit.py",
+      "bytes": 1782,
+      "sha256": "e5f27fa04ef054772a166638382483c47f214481a7944a62d58ce781c8ece630"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/research/data-sources.json",
+      "bytes": 1610,
+      "sha256": "cda12d9cc1602fd084d0f517862bc24e2318a3a21360a863c016974946f6b131"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/research/raw/tencent-2024-bfq.json",
+      "bytes": 16174,
+      "sha256": "8af8aa7cbdf09d1f92f15910d4992f7e27240ef93e4fafdcf72b083274de0db9"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/research/raw/tencent-2024-qfq.json",
+      "bytes": 16209,
+      "sha256": "fce8fbaa55258d46041f49ffd2c034fe5ca83340d7c865306c39249e03a85dee"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/research/raw/tencent-2025-bfq.json",
+      "bytes": 16405,
+      "sha256": "569caee44974d18f955ed384459b42ca6c7199b7344d296607815e861e0538bc"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/research/raw/tencent-2025-qfq.json",
+      "bytes": 16440,
+      "sha256": "b7f805eeb2c8dd824f6dae54fd7c2547adb10559189b1bf3c61f1ddf67acff22"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/research/raw/tencent-2026-bfq.json",
+      "bytes": 14951,
+      "sha256": "b1e333e2737337eae7411b01bf91b6c3616f911adc30887becdc52a62061a992"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/research/raw/tencent-2026-qfq.json",
+      "bytes": 14986,
+      "sha256": "475a594048feedf1c6622519f687bdf21972350a9798e27fbe034e72639adf50"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/research/summary.md",
+      "bytes": 9411,
+      "sha256": "ccd47ebd844152333de3808b6a6256d3f5f454a98d7f5cee927bfb7b6713a39b"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/research/wave-stats.json",
+      "bytes": 486,
+      "sha256": "7173333dfa0e9cbd80ba74873ee0a1007a85c8d5a5b3615ab15451007a3b61f0"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/timeline.csv",
+      "bytes": 5319,
+      "sha256": "91da8176042d757701f800eafb00f659bfaa54be2941f0e3b3a46f2ab5209f2d"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/unadjusted.json",
+      "bytes": 67438,
+      "sha256": "932e74b49e5db1cf2f68176fd76f8f5bf49f123b58bcba333242b2a39d86b34f"
+    },
+    {
+      "path": "projects/stock-video/projects/aerospace-2025/validation.json",
+      "bytes": 768,
+      "sha256": "9f74579ae81f63e79b0659e157fdc98b442031e5c5510d0190fe3c01c1991995"
+    },
+    {
+      "path": "projects/stock-video/public/aerospace-2025-v1/audio-design.json",
+      "bytes": 325,
+      "sha256": "c30cc4288bf5146d6d9be68694abf6674bae5493d951fa0dc45cdb7550089441"
+    },
+    {
+      "path": "projects/stock-video/public/aerospace-2025-v1/mix.wav",
+      "bytes": 5760078,
+      "sha256": "cf687ef790548e82c72271ee623bef97a38cc87cd3973a79555de1844a72f593"
+    },
+    {
+      "path": "projects/stock-video/public/shibao-impact.wav",
+      "bytes": 65358,
+      "sha256": "f8b4bd798c2a382a1ce15859c939bb542b0021c20c89b314c456a1f54061c49a"
+    },
+    {
+      "path": "projects/stock-video/public/shibao-v2/mix.wav",
+      "bytes": 5760078,
+      "sha256": "fdc0b2b513e2d3b0582de0d7c9082586402fbc7755a859053ba99421409dec82"
+    },
+    {
+      "path": "projects/stock-video/public/shibao-v4/mix.wav",
+      "bytes": 5760078,
+      "sha256": "8afe5a85d117cae23cb5a5fc49a2633b8ce8900b1d41102ed4c3b0c154b67bf1"
+    },
+    {
+      "path": "projects/stock-video/public/shibao-v5/mix.wav",
+      "bytes": 5760078,
+      "sha256": "f762e0c248d01060af8f4b9c1907150a5ab4cfe577393ca70c459e1420a0ed4b"
+    },
+    {
+      "path": "projects/stock-video/reference-analysis/v4/tencent-2026-response.json",
+      "bytes": 14917,
+      "sha256": "b33902a9f93ff10d40a12c50d858302988efe4235a6064144624cce3c08a4fd7"
+    },
+    {
+      "path": "projects/stock-video/reference-analysis/v5/tencent-unadjusted-2021.json",
+      "bytes": 16028,
+      "sha256": "69364b9bc00f5453d86f5b545f7c21e9b7a425e928b120b423673c8462483544"
+    },
+    {
+      "path": "projects/stock-video/reference-analysis/v5/tencent-unadjusted-2022.json",
+      "bytes": 15961,
+      "sha256": "1c73c5a76556b1d8a447684eaaec3b0e3b1874e6aaab37ec81a64bd3cb650e99"
+    },
+    {
+      "path": "projects/stock-video/reference-analysis/v5/tencent-unadjusted-2023.json",
+      "bytes": 16589,
+      "sha256": "790d1b68166182e60328a0166ecf49088a53325cda8145ecab925e8f4f2790ce"
+    },
+    {
+      "path": "projects/stock-video/reference-analysis/v5/tencent-unadjusted-2024.json",
+      "bytes": 17130,
+      "sha256": "b28bb6ee8548ea00997913df60265fb018712906610570d8961fe8d018625a1c"
+    },
+    {
+      "path": "projects/stock-video/reference-analysis/v5/tencent-unadjusted-2025.json",
+      "bytes": 17222,
+      "sha256": "7545ac98809dcb6d35f6804ea2ae295aa9c22f30cfc79e0f084fbcf41ae936dc"
+    },
+    {
+      "path": "projects/stock-video/reference-analysis/v5/tencent-unadjusted-2026.json",
+      "bytes": 14882,
+      "sha256": "2b90112420857bd8b3fa7e5239c99fb80eac66b51480973ff0811c467ec11b60"
+    },
+    {
+      "path": "projects/stock-video/remotion.config.ts",
+      "bytes": 371,
+      "sha256": "af5ce97f98b2c91a7891f2bef4801f7dc700843f010fd81e1566d9eebf6f5ad1"
+    },
+    {
+      "path": "projects/stock-video/scripts/build_shibao_v2.py",
+      "bytes": 4518,
+      "sha256": "312e690361ac2978c64c62ff3438ec8daf2385b77f89035156767ac4a41fbfc2"
+    },
+    {
+      "path": "projects/stock-video/scripts/build_shibao_v3.py",
+      "bytes": 2054,
+      "sha256": "32415efb22a896bbdd8ddcf7ade0d07c99e18257f738ca65aa3a18824c18ef89"
+    },
+    {
+      "path": "projects/stock-video/scripts/build_shibao_v4.py",
+      "bytes": 5484,
+      "sha256": "d0d7e1bd45c1b70063bea96808ac09106729b688c55df33516f592f1cbf77c92"
+    },
+    {
+      "path": "projects/stock-video/scripts/build_shibao_v5.py",
+      "bytes": 7530,
+      "sha256": "1f1321e4ed9ac007522d605bee951712edec26945b32935820d3c89df5c311b0"
+    },
+    {
+      "path": "projects/stock-video/scripts/stock_video/build.py",
+      "bytes": 12531,
+      "sha256": "ef8b1da877270d1283af3823760dfdabd0d74a455f320337085c1993cc28f174"
+    },
+    {
+      "path": "projects/stock-video/scripts/stock_video/fetch.py",
+      "bytes": 2734,
+      "sha256": "a97c435e2b9743df735e4365d4bd2e52a742f27953da6163c20082f74c515cbd"
+    },
+    {
+      "path": "projects/stock-video/scripts/stock_video/run-python.mjs",
+      "bytes": 754,
+      "sha256": "4114048313e2c24f3d5a8ab97e0dee035381fc54cf9ed4093e12aa044bce9feb"
+    },
+    {
+      "path": "projects/stock-video/src/Composition.tsx",
+      "bytes": 2283,
+      "sha256": "dcffde75907f5f5ccc6d3a385bb4d08947cc2dfa91e8da8ecd9119f617b6fdae"
+    },
+    {
+      "path": "projects/stock-video/src/Root.tsx",
+      "bytes": 1901,
+      "sha256": "338816d055c07d3a7ac6ae4d0e6ff28a912c0161dc73520e5b0c3ece76f4e9ae"
+    },
+    {
+      "path": "projects/stock-video/src/Shibao.tsx",
+      "bytes": 5569,
+      "sha256": "c848ed37c24005db3e4b4a0398327df7227900b675591cf68863ef6654907bb1"
+    },
+    {
+      "path": "projects/stock-video/src/ShibaoCandle30.tsx",
+      "bytes": 11153,
+      "sha256": "242a5cef4c308ecc55161fd61b22bdeaaf13c14b017abed8e01ff88175d2d0b5"
+    },
+    {
+      "path": "projects/stock-video/src/ShibaoDaily.tsx",
+      "bytes": 7026,
+      "sha256": "d4333e661a57d7f4b9738979e72a8dff7a380bf641891ad99414beeee36d3d57"
+    },
+    {
+      "path": "projects/stock-video/src/ShibaoGlass30.tsx",
+      "bytes": 11684,
+      "sha256": "7ec9b256a32f437d14f6c1e9905a03771de7e3f476003b5fb31d8d30d3a8fb6d"
+    },
+    {
+      "path": "projects/stock-video/src/ShibaoImpact.tsx",
+      "bytes": 5183,
+      "sha256": "3159008e4b06ba1f9545b3f745bcf4e01372eea352e03598a7aa356bb1479488"
+    },
+    {
+      "path": "projects/stock-video/src/ShibaoMarket30.tsx",
+      "bytes": 11483,
+      "sha256": "9b039d5223656c3627bfcd66550b0514644659d6a2503efcfa4a68051d884466"
+    },
+    {
+      "path": "projects/stock-video/src/ShibaoReference30.tsx",
+      "bytes": 10489,
+      "sha256": "c891a5bd7d2396ed06f2e53e09ea496f5c8e6945b86f7fd4101f82eb044a9d93"
+    },
+    {
+      "path": "projects/stock-video/src/ShibaoStory30.tsx",
+      "bytes": 7571,
+      "sha256": "5ebc2947055b00a5298dd4ddf92d34fb211bfa83bcac206fc38d6b46b5550e76"
+    },
+    {
+      "path": "projects/stock-video/src/StockMotionVideo.tsx",
+      "bytes": 15150,
+      "sha256": "21a9e7b8768a2959ba2a6cd419ba638a57cf7feb6e64d933465d2fa100520984"
+    },
+    {
+      "path": "projects/stock-video/src/index.ts",
+      "bytes": 109,
+      "sha256": "957e481dd33a29b4a55ae0e95dbf763b7e48c37c427ca4bd1275faf34bc07a74"
+    },
+    {
+      "path": "projects/stock-video/src/shibao-2021-v4.json",
+      "bytes": 87970,
+      "sha256": "ef5d26888ea8b10c157530c0170535fd43a1c2fe62b32e92d6b1f014420de47b"
+    },
+    {
+      "path": "projects/stock-video/src/shibao-daily.json",
+      "bytes": 148642,
+      "sha256": "7beb784816dd13640ba30b1f2997e746c780f72e8dd3b76df96129b4ed8805f5"
+    },
+    {
+      "path": "projects/stock-video/src/shibao-data.json",
+      "bytes": 12145,
+      "sha256": "d789d6a3b4effd80f9cdf10ba4375623d140fb36ae8f4bb1164b7e22d57101ea"
+    },
+    {
+      "path": "projects/stock-video/src/shibao-detect.ts",
+      "bytes": 821,
+      "sha256": "6081adc4bf671e5d24ebff8732a80292cb491c9fe457b143687ce495320b9c85"
+    },
+    {
+      "path": "projects/stock-video/src/shibao-events.json",
+      "bytes": 1947,
+      "sha256": "26944d0614d58592301fdbaf571a53d376a0dae7f7b62bf90b11743837b09552"
+    },
+    {
+      "path": "projects/stock-video/src/shibao-v2-plan.json",
+      "bytes": 144887,
+      "sha256": "23754f694e3a3f73876fbd43b0ea55cccd6edb5d306ac8aaaaad7dd4be90ae0d"
+    },
+    {
+      "path": "projects/stock-video/src/shibao-v3-plan.json",
+      "bytes": 303340,
+      "sha256": "89b58c08bd9310c370da05f6fa6ac38b20ffab90ebf57d17f6d46ed1a6d20a06"
+    },
+    {
+      "path": "projects/stock-video/src/shibao-v4-plan.json",
+      "bytes": 340507,
+      "sha256": "1aa7eaeb9274f965ee2a734592cadae933d7fcb3c06ed0331e402c1a29a33d5e"
+    },
+    {
+      "path": "projects/stock-video/src/shibao-v5-catalysts.json",
+      "bytes": 1085,
+      "sha256": "3d97dccd8f5d4317fab59e0a3eca887e9cda05bb37996b8f3b08ebe0a4ce17d8"
+    },
+    {
+      "path": "projects/stock-video/src/shibao-v5-market.json",
+      "bytes": 239559,
+      "sha256": "9c2d48642ae09591ea676991ebd932fd1a8e5687309003e45bc822ba20e63f0a"
+    },
+    {
+      "path": "projects/stock-video/src/shibao-v5-plan.json",
+      "bytes": 336528,
+      "sha256": "82fb2e53c664c906cf4ce9a1a57e396ab86e53a7682b46eecf4664162a1a8936"
+    },
+    {
+      "path": "projects/stock-video/src/stock-videos/aerospace-2025-v1.json",
+      "bytes": 406088,
+      "sha256": "17c979fd79027b8c9aff8ba5b74e70073823d410633490d07e870a1074a224e9"
+    },
+    {
+      "path": "projects/stock-video/tsconfig.json",
+      "bytes": 368,
+      "sha256": "a6fbcf514dbfd3d116c3f7f78b72949c8c2ff45bdbe17aeff4c97e16bc1327fa"
+    },
+    {
+      "path": "projects/stock-video/浙江世宝数据说明.md",
+      "bytes": 1161,
+      "sha256": "8e4dd327b7408e94d735aee5742670349cf1e87b88535c674cd4ff63b4af86a9"
+    },
+    {
+      "path": "projects/stock-video/浙江世宝日K数据说明.md",
+      "bytes": 1169,
+      "sha256": "8d98641704a95a2b949e86a9320fc6cc23d5345aca2f5faa0d4fc6b7746d8b6f"
+    },
+    {
+      "path": "projects/survivorship-bias/MOTION-SPEC.md",
+      "bytes": 1213,
+      "sha256": "96ce5c11b512d7ab8a76aa8c15a2be5ad41495463fefd6cfea1b15ffa2a41dd0"
     },
     {
       "path": "projects/survivorship-bias/assets/vector-definitions.svg",
@@ -162,19 +622,9 @@
       "sha256": "05b3bc7e4c7d47f9f4cb17e7589d18b3816ce7efe33494810a4012c3c28e22e9"
     },
     {
-      "path": "projects/survivorship-bias/MOTION-SPEC.md",
-      "bytes": 1213,
-      "sha256": "96ce5c11b512d7ab8a76aa8c15a2be5ad41495463fefd6cfea1b15ffa2a41dd0"
-    },
-    {
       "path": "projects/survivorship-bias/package.json",
       "bytes": 355,
       "sha256": "f8da237533aa8adc11df0cb77bcca217586098d6fd31096d9dbc85b8639ed200"
-    },
-    {
-      "path": "README.md",
-      "bytes": 2416,
-      "sha256": "0d430fb02c6c6b873158d66c6679fb397c7df54f26e273baddfe600274affe6a"
     },
     {
       "path": "scripts/prepare_assets.py",
@@ -183,13 +633,8 @@
     },
     {
       "path": "scripts/verify_package.py",
-      "bytes": 2767,
-      "sha256": "368fd3aa176045fcae14661142d4009e82ba6484cc89fc3b255de06150cb4ea4"
-    },
-    {
-      "path": "SUBMISSION_REVIEW.md",
-      "bytes": 1494,
-      "sha256": "a37e11f65a48bf5a13bee0e5ef409e036af360e95aecf900c8dc3be1976ad014"
+      "bytes": 3041,
+      "sha256": "a030cb00cfe68e43ab6b34d739871fb03102dacbf6deb1f0875d4f1ca3bfd5ab"
     }
   ]
 }

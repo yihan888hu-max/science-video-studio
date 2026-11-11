@@ -1,0 +1,4 @@
+interface:
+  display_name: "股票行情视频导演"
+  short_description: "先核验行情与短线叙事，再制作透明立体K线和数据驱动镜头动画"
+  default_prompt: "使用 $stock-video 为指定股票制作行情回看，先整理资料摘要与术语证据，再制作和质检视频。"

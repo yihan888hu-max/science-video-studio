@@ -1,6 +1,14 @@
 # 股票行情动画工程
 
-Remotion 4.0.541 + React，真实日K、透明立体蜡烛、波动驱动镜头、完成后停顿、消息卡、顶部统计与原创电子音效。当前包含航天发展2025年至今的30秒样片，以及浙江世宝历次可编辑版本。
+Remotion 4.0.541 + React，真实日K、透明立体蜡烛、波动驱动镜头、完成后停顿、消息卡与顶部统计。包含平潭发展30秒V1、60秒V2、120秒V3，以及航天发展和浙江世宝历次可编辑版本。
+
+## 平潭发展最新入口
+
+- [120秒V3源码说明](projects/pingtan-2025-v3/README.md)、[导演稿](projects/pingtan-2025-v3/DIRECTOR.md)、[质检](projects/pingtan-2025-v3/QA.md)、[配乐与音效](projects/pingtan-2025-v3/CREDITS.md)
+- [30秒V1](projects/pingtan-2025/README.md)、[60秒V2](projects/pingtan-2025-v2/README.md)均以独立Composition保留。
+- 固定MP4、关键帧与版本标签见[发布记录](../../docs/stock-video/PINGTAN_RELEASE_2026-11-12.md)。V3素材恢复后使用`npm run rebuild:pingtan-v3`、`npm run check:pingtan-v3`、`npm run render:pingtan-v3`。
+
+平潭发展使用用户提供的人声音乐，公开仓库不附原曲和独立混音；恢复方法与原曲校验值在`local-media.example.json`。V3准备脚本从免费来源获取真实音效，之后本地渲染。此前其他股票的原创合成音轨保持保留。
 
 [![航天发展顶部画面](../../previews/stock-video/aerospace-peak.png)](../../previews/stock-video/aerospace-development-2025-now-v1.mp4)
 
@@ -17,7 +25,7 @@ npm run check:aerospace
 npm run dev
 ```
 
-仅首次安装或锁文件变化后需要npm ci。选`Aerospace2025`，预览端口以Studio实际输出为准。所有已发布音轨和生成后的film JSON已随源码提供，可直接预览。中文系统字体按PingFang SC、Microsoft YaHei、Noto Sans CJK SC顺序回退，字体文件不打包。
+仅首次安装或锁文件变化后需要npm ci。选`Aerospace2025`，预览端口以Studio实际输出为准。航天发展原创音轨和所有生成后的film JSON随源码提供；平潭发展先恢复上述本地素材。中文系统字体按PingFang SC、Microsoft YaHei、Noto Sans CJK SC顺序回退，字体文件不打包。
 
 修改资料或配置后重建并渲染：
 
@@ -27,7 +35,7 @@ npm run check:aerospace
 npm run render:aerospace
 ```
 
-npm脚本通过run-python.mjs选择Mac的python3、Windows的py -3或python，启用UTF-8。Windows需要FFmpeg在PATH中；实际Mac生成与发布检查通过，Windows分支为兼容实现，尚未在Windows实机验收。渲染浏览器使用Remotion自带下载机制，不指定机器上的其他浏览器。
+npm脚本通过run-python.mjs选择Mac的python3、Windows的py -3或python，启用UTF-8。FFmpeg需要在PATH中；原航天发展在Mac验证，平潭发展三版在Windows实际生成、检查和整片渲染。未将两台机器上的验证扩写为每个版本都在双平台实测。渲染浏览器使用Remotion自带下载机制，不指定机器上的其他浏览器。
 
 输出`out/aerospace-development-2025-now-v1.mp4`；out与原始混音保持Git忽略。发布的固定成片在仓库`previews/stock-video/`，不会被普通重渲染覆盖。
 

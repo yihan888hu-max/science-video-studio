@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "output": "out/pingtan-v3-final-audio.wav",
+  "dry_run": false,
+  "verified": true,
+  "summary": {
+    "duration_s": 120.0,
+    "acodec": "pcm_s16le",
+    "channels": 2
+  },
+  "commands": 1,
+  "audio": {
+    "voice": null,
+    "stereo_widen": null,
+    "effects": false,
+    "effects_volume": null
+  },
+  "video": false,
+  "audio_stream": 0,
+  "dynamics": [],
+  "dropped_non_av_streams": false
+}

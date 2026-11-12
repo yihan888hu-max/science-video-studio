@@ -44,13 +44,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 3809,
-      "sha256": "456298869d09117f00dd43fc2b88ac44df4adf3a3aada95cf984b5c9f581e309"
+      "bytes": 5147,
+      "sha256": "7c53c1bf0ddc46912b221e9f3bcd4c6ca07b5659347578296a5cfc2db9727f80"
     },
     {
       "path": "SUBMISSION_REVIEW.md",
-      "bytes": 1295,
-      "sha256": "7a1cb74098d96b0c43701bda15a3cc3684cf9184a30804bea1ce79c886fa4aa1"
+      "bytes": 1893,
+      "sha256": "122286e79f5eb54cf14eec3797d7a77a5ffcedeea05bd5c5659a35c3c6757d3f"
     },
     {
       "path": "design/style-test.html",
@@ -69,8 +69,8 @@
     },
     {
       "path": "docs/CHANGELOG.md",
-      "bytes": 1419,
-      "sha256": "1eb68c9ad7907c9e76e4b6096dba79a41dce30c44f010db9bd903669cac7767d"
+      "bytes": 2080,
+      "sha256": "c974bd213302ea68215525cf3988dd569d601cef1589a01f025e1d98f9a3a7ba"
     },
     {
       "path": "docs/ENVIRONMENT.md",
@@ -89,8 +89,8 @@
     },
     {
       "path": "docs/THIRD_PARTY_NOTICES.md",
-      "bytes": 1544,
-      "sha256": "c9824a0fc8fd0356e78629fa6fe3ec2729cb0e5d70ec9baf8de9ef5088c5f64a"
+      "bytes": 2270,
+      "sha256": "6b57c6382bd02a77e435bc189335abd1a63ebcd0c0057e5c0e2c5f1e10d4ab4c"
     },
     {
       "path": "docs/WORKFLOW.md",
@@ -158,14 +158,24 @@
       "sha256": "c34c9d7053f0a58315839ab3a35c18a6560f7e99a1f48f9ca986f4581202f13a"
     },
     {
+      "path": "docs/stock-video/PINGTAN_CHECKS_2026-11-12.json",
+      "bytes": 1635,
+      "sha256": "1a0fc586d0171eed734b97ccf6628d6521895f4fb9b454b7ba9d95befd83a892"
+    },
+    {
+      "path": "docs/stock-video/PINGTAN_RELEASE_2026-11-12.md",
+      "bytes": 4337,
+      "sha256": "57f582796c104e76ff88d8cb2595e5185edd4d104dc108f235711d27ffabead2"
+    },
+    {
       "path": "docs/stock-video/PRODUCTION_DETAILS.md",
-      "bytes": 8936,
-      "sha256": "f8b6d0471c7cb2fe0a6398dd1f19fbb04d90f11f6384c1855b40dec4a4774b18"
+      "bytes": 10440,
+      "sha256": "57fd5541d455cb97507cb85ee19b25c60c003f6856cae5e12562ecb43c0acd03"
     },
     {
       "path": "docs/stock-video/RELEASE.md",
-      "bytes": 2616,
-      "sha256": "5c190c8902039e6c7cb2b3628b6b5a4bb8da4ddc658bce367316f6d13daf9a2d"
+      "bytes": 2811,
+      "sha256": "f002fdb598da20cab9988f2e0b8605c414130e5bb0e413633c3801c729212e8d"
     },
     {
       "path": "previews/motion-contact-sheet.png",
@@ -188,6 +198,11 @@
       "sha256": "b1ded637b2734ee865e1a8f6bcc2b68ee52bd3d3c018b14687aec44a724cb4d1"
     },
     {
+      "path": "previews/stock-video/pingtan-development-120s-v3.mp4",
+      "bytes": 52486390,
+      "sha256": "e5ba87d876db1b1ab8b79d82121c9a61f9cd9c6b03a27c2c9f080db3d4daf9e5"
+    },
+    {
       "path": "previews/stock-video/pingtan-development-30s-v1.mp4",
       "bytes": 14774058,
       "sha256": "f5a888dfef0eddcf0245fb82e4136d18c586b3d35328a6e3b87242fda02a2fde"
@@ -199,8 +214,8 @@
     },
     {
       "path": "previews/stock-video/pingtan-release-manifest.json",
-      "bytes": 936,
-      "sha256": "f4be19d0d76bd9836eda26cec9214a72a3580859967c01d27857a2ff608c84fb"
+      "bytes": 1560,
+      "sha256": "27bf4eaf64c0379dbab06daaba37a2af1b10bba4f9f8a4ac96349fc46dd22133"
     },
     {
       "path": "previews/stock-video/pingtan-v1-contact.jpg",
@@ -211,6 +226,16 @@
       "path": "previews/stock-video/pingtan-v2-contact.jpg",
       "bytes": 480840,
       "sha256": "da7b6ee5ef6ea807da84674f8c1c24a315f6629cfe924217ae8fd9779da244e7"
+    },
+    {
+      "path": "previews/stock-video/pingtan-v3-audio-review.png",
+      "bytes": 56553,
+      "sha256": "306f94e54ee481cd81aa2ca6023ebf3e5aa1ea49e62e59f982606109fe16f114"
+    },
+    {
+      "path": "previews/stock-video/pingtan-v3-contact.jpg",
+      "bytes": 608875,
+      "sha256": "e226569fc5e0ae469bb2a3e6b5e54d85ca762573cc290dd837a925cdf90e7b35"
     },
     {
       "path": "previews/style-test.png",
@@ -234,8 +259,8 @@
     },
     {
       "path": "projects/stock-video/README.md",
-      "bytes": 3943,
-      "sha256": "d74dca5b1774fd04d7f1581df843e10dcba841538f1de9829c40a7395d877a7d"
+      "bytes": 4899,
+      "sha256": "4d181f765a61f3668fe56e91263c93f6479fdb9d2fc46b77a342874ed2648708"
     },
     {
       "path": "projects/stock-video/docs/REFERENCE-下载-1.md",
@@ -274,8 +299,8 @@
     },
     {
       "path": "projects/stock-video/local-media.example.json",
-      "bytes": 587,
-      "sha256": "f03a7183d2431fdcc9fce121dd647d5caa183b62be3a8f9675729b4fc8547376"
+      "bytes": 647,
+      "sha256": "9cd0c3470b2249a46b0726eb954527534d4e47048cb4ac0b0dfdb9c746f68c2b"
     },
     {
       "path": "projects/stock-video/package-lock.json",
@@ -284,8 +309,8 @@
     },
     {
       "path": "projects/stock-video/package.json",
-      "bytes": 3806,
-      "sha256": "5a78ed2f6c29bdac3565e09a8c081f514b12192dd4d956e55c191c38fe08cde1"
+      "bytes": 4234,
+      "sha256": "574ea1e82fff1c276c08865146c96a2e383081d324bf201b0ea93a4a79d71254"
     },
     {
       "path": "projects/stock-video/projects/aerospace-2025/QA.md",
@@ -453,6 +478,111 @@
       "sha256": "4232cc7dd86e2d6ebcd413e7ddfc5db2d82d3565f4f54dfbc40c6b22e3992f4d"
     },
     {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/CREDITS.md",
+      "bytes": 2052,
+      "sha256": "9afb051ae50c9112b2473d9e8a8d11e414aa018baabaed96ef7f6ce325485a46"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/DIRECTOR.md",
+      "bytes": 1455,
+      "sha256": "3d7d6333fa0325a7a251cdb779c3b63d182458a5d612bb0a15f0fc1754c0a8d3"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/QA.md",
+      "bytes": 5024,
+      "sha256": "af7fd7e7410b0be66391818b98709cae1090b55ee496fb0e5b604d37ddeab72b"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/README.md",
+      "bytes": 3086,
+      "sha256": "49c11704940f0a1c18c8cbe5e2f29e56f426fa606d13fef94a091524f58a95a6"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/SOUND.md",
+      "bytes": 2347,
+      "sha256": "680696f0fda6bcf52a49cb142df86ccc9446b2983601d55f544b36b9cadfe0f7"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/audio-extract.json",
+      "bytes": 425,
+      "sha256": "70d79b782fe9270c9e0dbaf12bcac4c96743484c53722757f04f0c77e954272d"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/audio-proof.json",
+      "bytes": 18688,
+      "sha256": "fb4dc17ceaa57e4ae8427b00a9515ba35162350ab969667dcac78536707f44a4"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/brief.json",
+      "bytes": 8686,
+      "sha256": "53a3774e1d13e8c6fffd2fc8ee74152561d4fc28ea0348e2c041409281b83541"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/daily.json",
+      "bytes": 17801,
+      "sha256": "42574586ef9535e2b2bcf256989844956fae25fdcc2f03f85589cea8a3f6c92d"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/frame-check.json",
+      "bytes": 4315,
+      "sha256": "240b30d1af0b97fb6d5ce3e715eaacbee96e2bb304d8773ab88eada15a86e09f"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/make_audio_review.py",
+      "bytes": 1711,
+      "sha256": "9ff8de2c255e3e691339fed649aec6150884268dcd225ba61090d47758aa628c"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/make_contact.py",
+      "bytes": 952,
+      "sha256": "56733f604bbdf1b6533954006e6f9113c12311d5b0c9f882583378cdb3714c04"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/media-check.json",
+      "bytes": 3650,
+      "sha256": "54a232d019641045f422839f82cc6dcee46384c93f373ba0a1524e678c838a31"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/output-probe.json",
+      "bytes": 1351,
+      "sha256": "5a957e899a77f4837ac9ac178c5662c78c2e75f17e1452ab4b54e09d4fb0677a"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/package_delivery.py",
+      "bytes": 3924,
+      "sha256": "c2db4ce53c1c371eada6a8dfd8eb1def953b21d447889a33e7f92f9f6975fd19"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/research/audit.py",
+      "bytes": 3510,
+      "sha256": "96e4b705bf09bd8ffe82ba52e0e91b15f424d0aa093866f6e46eadfca03a1b85"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/research/sfx-sources.json",
+      "bytes": 3645,
+      "sha256": "eb366dc900ae02f6cdad8cb378ef5316a8afba44ee99bd5e5eccd4a2da579378"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/research/skill-manifest.json",
+      "bytes": 73278,
+      "sha256": "2f9da50f8bcf382d3489f6ff864153fc007862cabccc489f50c1ee72c2a7775e"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/research/summary.md",
+      "bytes": 3402,
+      "sha256": "56d395da24605515cad51f6be9d2009b8730319b486154275098171b6b174c68"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/timeline.csv",
+      "bytes": 7953,
+      "sha256": "8d5824a2a1abe94a7f3bf358ac0ce7bbacee8f36e1fee09841827ac0a2838c2d"
+    },
+    {
+      "path": "projects/stock-video/projects/pingtan-2025-v3/validation.json",
+      "bytes": 8376,
+      "sha256": "d700f47f4108affb7febccc9a8dff19ab5daded55bd66d1a94193eec061b4495"
+    },
+    {
       "path": "projects/stock-video/projects/pingtan-2025/QA.md",
       "bytes": 3833,
       "sha256": "73162f910d643cde6c1d0c5f293fe67889578be4551370dcedc0a66f8a4b6236"
@@ -603,6 +733,11 @@
       "sha256": "26ef597ee31add57959d5d94765920d2892b063b7a2c9dc9d0ad2d9f496b2195"
     },
     {
+      "path": "projects/stock-video/public/pingtan-2025-v3/audio-design.json",
+      "bytes": 18688,
+      "sha256": "fb4dc17ceaa57e4ae8427b00a9515ba35162350ab969667dcac78536707f44a4"
+    },
+    {
       "path": "projects/stock-video/public/shibao-impact.wav",
       "bytes": 65358,
       "sha256": "f8b4bd798c2a382a1ce15859c939bb542b0021c20c89b314c456a1f54061c49a"
@@ -698,6 +833,16 @@
       "sha256": "a128e940b5e2ee097f0e4bcb3ee9586c8dded879fa4ccf531760869b9b2a5272"
     },
     {
+      "path": "projects/stock-video/scripts/stock_video/build_pingtan_v3.py",
+      "bytes": 11446,
+      "sha256": "56796aecdb60b97000249161c6fadae693d9faf3d1fc5765634b7f91b37b325a"
+    },
+    {
+      "path": "projects/stock-video/scripts/stock_video/create_pingtan_v3_renderer.py",
+      "bytes": 5974,
+      "sha256": "343efc79bb07281a1716bd4effc5016011db4da3b8ed7f169d0686b93a738887"
+    },
+    {
       "path": "projects/stock-video/scripts/stock_video/fetch.py",
       "bytes": 2734,
       "sha256": "a97c435e2b9743df735e4365d4bd2e52a742f27953da6163c20082f74c515cbd"
@@ -708,9 +853,19 @@
       "sha256": "96dd5a99ff3812a6164cc737ba33f99262fd06436800743cd08f26e500db3551"
     },
     {
+      "path": "projects/stock-video/scripts/stock_video/prepare_pingtan_v3_sfx.py",
+      "bytes": 3428,
+      "sha256": "bca7225cdcee5f64ea0bd7740b1df3891be9f54e7e86559439be02b5e44e0f3a"
+    },
+    {
       "path": "projects/stock-video/scripts/stock_video/review_pingtan_v2.mjs",
       "bytes": 528,
       "sha256": "e313ffa882d30318994073f6f47e7ad74cbbbcd6c114aff89c58f5fc314d3fd8"
+    },
+    {
+      "path": "projects/stock-video/scripts/stock_video/review_pingtan_v3.mjs",
+      "bytes": 972,
+      "sha256": "f64ec97dcac725304f67b93429100fd7e2e759029cb5dd853a170bba076a719a"
     },
     {
       "path": "projects/stock-video/scripts/stock_video/run-python.mjs",
@@ -724,8 +879,8 @@
     },
     {
       "path": "projects/stock-video/src/ProjectRoot.tsx",
-      "bytes": 736,
-      "sha256": "efeddf73ab9549753261433f1dd5b4ac1b85ff4992ce911754ea60da763d4810"
+      "bytes": 999,
+      "sha256": "d50c0ca8537e5e714cad1f7aea42bcc76ef06c9eda0b675af262952021dea7ba"
     },
     {
       "path": "projects/stock-video/src/Root.tsx",
@@ -781,6 +936,16 @@
       "path": "projects/stock-video/src/StockMotionVideo.tsx",
       "bytes": 15150,
       "sha256": "21a9e7b8768a2959ba2a6cd419ba638a57cf7feb6e64d933465d2fa100520984"
+    },
+    {
+      "path": "projects/stock-video/src/StockTechEffects.tsx",
+      "bytes": 7013,
+      "sha256": "b1eab1763d82afe3d994e2e915aec44be2e0285ab59ef6758e789958c8991c43"
+    },
+    {
+      "path": "projects/stock-video/src/StockTechVideo.tsx",
+      "bytes": 13894,
+      "sha256": "f4d7c6bc8b80c0d1aed47dbe01dbe2ab8ef560ad7188dc389863d7150165ffd7"
     },
     {
       "path": "projects/stock-video/src/index.ts",
@@ -856,6 +1021,11 @@
       "path": "projects/stock-video/src/stock-videos/pingtan-2025-v2.json",
       "bytes": 484874,
       "sha256": "13df1a732545619b55c72cd2029cbc028351dfdd335f2bff2c28024ec6d4a0af"
+    },
+    {
+      "path": "projects/stock-video/src/stock-videos/pingtan-2025-v3.json",
+      "bytes": 946004,
+      "sha256": "ff62accde4de43ce85ddb032ffef90e48a2464f85dedcf1a0cf53f66c5db57f7"
     },
     {
       "path": "projects/stock-video/tsconfig.json",

@@ -52,7 +52,10 @@
     "render:pingtan": "remotion render Pingtan2025 out/pingtan-development-2025-now-v1-final.mp4 --codec=h264 --crf=18 --concurrency=4 --image-format=png --color-space=bt709 --pixel-format=yuv420p",
     "rebuild:pingtan-v2": "node scripts/stock_video/run-python.mjs scripts/stock_video/build_pingtan_v2.py",
     "check:pingtan-v2": "tsc --noEmit && node scripts/stock_video/run-python.mjs projects/pingtan-2025-v2/research/audit.py",
-    "render:pingtan-v2": "remotion render Pingtan60V2 out/pingtan-development-60s-v2.mp4 --codec=h264 --crf=18 --concurrency=4 --image-format=png --color-space=bt709 --pixel-format=yuv420p"
+    "render:pingtan-v2": "remotion render Pingtan60V2 out/pingtan-development-60s-v2.mp4 --codec=h264 --crf=18 --concurrency=4 --image-format=png --color-space=bt709 --pixel-format=yuv420p",
+    "rebuild:pingtan-v3": "node scripts/stock_video/run-python.mjs scripts/stock_video/build_pingtan_v3.py",
+    "check:pingtan-v3": "tsc --noEmit && node scripts/stock_video/run-python.mjs projects/pingtan-2025-v3/research/audit.py",
+    "render:pingtan-v3": "remotion render Pingtan120V3 out/pingtan-development-120s-v3.mp4 --codec=h264 --crf=18 --concurrency=4 --image-format=png --color-space=bt709 --pixel-format=yuv420p"
   },
   "allowScripts": {
     "esbuild": false

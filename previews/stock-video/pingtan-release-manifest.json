@@ -25,6 +25,24 @@
       "path": "previews/stock-video/pingtan-v2-contact.jpg",
       "bytes": 480840,
       "sha256": "da7b6ee5ef6ea807da84674f8c1c24a315f6629cfe924217ae8fd9779da244e7"
+    },
+    {
+      "version": "v3",
+      "path": "previews/stock-video/pingtan-development-120s-v3.mp4",
+      "bytes": 52486390,
+      "sha256": "e5ba87d876db1b1ab8b79d82121c9a61f9cd9c6b03a27c2c9f080db3d4daf9e5"
+    },
+    {
+      "version": "v3",
+      "path": "previews/stock-video/pingtan-v3-contact.jpg",
+      "bytes": 608875,
+      "sha256": "e226569fc5e0ae469bb2a3e6b5e54d85ca762573cc290dd837a925cdf90e7b35"
+    },
+    {
+      "version": "v3",
+      "path": "previews/stock-video/pingtan-v3-audio-review.png",
+      "bytes": 56553,
+      "sha256": "306f94e54ee481cd81aa2ca6023ebf3e5aa1ea49e62e59f982606109fe16f114"
     }
   ]
 }

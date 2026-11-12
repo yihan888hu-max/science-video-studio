@@ -10,9 +10,10 @@
   ],
   "commands": [
     "npm run prepare:pingtan",
-    "npm run rebuild:pingtan-v2",
-    "npm run check:pingtan-v2",
-    "npm run render:pingtan-v2"
+    "python scripts/stock_video/prepare_pingtan_v3_sfx.py",
+    "npm run rebuild:pingtan-v3",
+    "npm run check:pingtan-v3",
+    "npm run render:pingtan-v3"
   ],
   "note": "Restore your own supplied MP3 before rebuilding. Mac may use python3. Audio caches, raw samples and standalone mixed WAVs are not in Git."
 }

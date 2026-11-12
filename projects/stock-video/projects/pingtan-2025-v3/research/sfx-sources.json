@@ -1,0 +1,74 @@
+[
+  {
+    "name": "charge",
+    "file": "local-media/pingtan-v3-sfx/charge.ogg",
+    "license": "CC0 1.0 (skill source manifest)",
+    "source": "https://github.com/barty-bart/motion-graphics/blob/main/skills/sound-effects/sfx/riser/kenney-digital-powerup1.ogg",
+    "sha256": "d8b5ee27a8d81af6b45fff4cfcfc9834923bbda925dee00490d9fa519590269d"
+  },
+  {
+    "name": "charge-alt",
+    "file": "local-media/pingtan-v3-sfx/charge-alt.ogg",
+    "license": "CC0 1.0 (skill source manifest)",
+    "source": "https://github.com/barty-bart/motion-graphics/blob/main/skills/sound-effects/sfx/riser/kenney-digital-powerup3.ogg",
+    "sha256": "8f1ec3fcafd67d2e6f7e4a47ab6aaffb3b01f4e65942803fff977836272d504a"
+  },
+  {
+    "name": "surge",
+    "file": "local-media/pingtan-v3-sfx/surge.ogg",
+    "license": "CC0 1.0 (skill source manifest)",
+    "source": "https://github.com/barty-bart/motion-graphics/blob/main/skills/sound-effects/sfx/riser/kenney-digital-phaserup1.ogg",
+    "sha256": "46f483f17c747cef10692b666cac2207bcf33e22d5499d6c449960d2f5ea7170"
+  },
+  {
+    "name": "heavy",
+    "file": "local-media/pingtan-v3-sfx/heavy.ogg",
+    "license": "CC0 1.0 (skill source manifest)",
+    "source": "https://github.com/barty-bart/motion-graphics/blob/main/skills/sound-effects/sfx/impact/fs-177242-cinematic-impact.ogg",
+    "sha256": "374f5c6c54992e29340eae57b40a40d665d33fa8da622321d7a0b73c76ec3515"
+  },
+  {
+    "name": "sub",
+    "file": "local-media/pingtan-v3-sfx/sub.ogg",
+    "license": "CC0 1.0 (skill source manifest)",
+    "source": "https://github.com/barty-bart/motion-graphics/blob/main/skills/sound-effects/sfx/impact/kenney-sci-lowfrequency-explosion-000.ogg",
+    "sha256": "3aac38610c1b53e9e35d0a346b959759c7203de8cc450b8a0b8332a70fc1d5c2"
+  },
+  {
+    "name": "hit",
+    "file": "local-media/pingtan-v3-sfx/hit.ogg",
+    "license": "CC0 1.0 (skill source manifest)",
+    "source": "https://github.com/barty-bart/motion-graphics/blob/main/skills/sound-effects/sfx/impact/kenney-impact-impactpunch-heavy-000.ogg",
+    "sha256": "0e29a484700c0eab6223cf7ff3e22fbd430f9efc521516bf7a9be0b592df0379"
+  },
+  {
+    "name": "glass",
+    "title": "Glass break with hammer thud",
+    "file": "local-media/pingtan-v3-sfx/glass.mp3",
+    "license": "Mixkit Sound Effects Free License, synchronized video only; raw file not redistributed",
+    "source": "https://assets.mixkit.co/active_storage/sfx/759/759-preview.mp3",
+    "page": "https://mixkit.co/free-sound-effects/glass/",
+    "licenseUrl": "https://mixkit.co/license/#sfxFree",
+    "sha256": "8e8132515edc5badfe5fb0a7b3d52e7b1ba67baad198e3ef8d14073d543f2e03"
+  },
+  {
+    "name": "plasma",
+    "title": "Sci fi plasma gun power up",
+    "file": "local-media/pingtan-v3-sfx/plasma.mp3",
+    "license": "Mixkit Sound Effects Free License, synchronized video only; raw file not redistributed",
+    "source": "https://assets.mixkit.co/active_storage/sfx/1679/1679-preview.mp3",
+    "page": "https://mixkit.co/free-sound-effects/sci-fi/",
+    "licenseUrl": "https://mixkit.co/license/#sfxFree",
+    "sha256": "804109b15a81f6fdf516571d10139761650005ef3edabdb514844fd3e615e5f9"
+  },
+  {
+    "name": "thunder",
+    "title": "Cinematic laser gun thunder",
+    "file": "local-media/pingtan-v3-sfx/thunder.mp3",
+    "license": "Mixkit Sound Effects Free License, synchronized video only; raw file not redistributed",
+    "source": "https://assets.mixkit.co/active_storage/sfx/1287/1287-preview.mp3",
+    "page": "https://mixkit.co/free-sound-effects/sci-fi/",
+    "licenseUrl": "https://mixkit.co/license/#sfxFree",
+    "sha256": "385340df21a87da878c23fa6ba1fdbe4059a4fd15d160bd45d20c9ecf7faecfc"
+  }
+]

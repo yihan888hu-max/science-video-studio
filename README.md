@@ -2,7 +2,19 @@
 
 仓库包含原有Windows/HyperFrames科普工程，以及新加入的Remotion股票行情动画。各项目独立保留源码、资料与制作记录。
 
-## 最新：航天发展日K动画
+## 最新：平潭发展120秒 V3
+
+[![平潭发展V3关键帧](previews/stock-video/pingtan-v3-contact.jpg)](previews/stock-video/pingtan-development-120s-v3.mp4)
+
+1080×1920、30fps、120秒。2025年9月开始，保留285条完整日线；新增双向玻璃破位、连续下行冲击、分叉闪电、透亮红绿K线、科技范围扫描和高点至阶段低点的跌幅统计。背景人声音乐连续播放，充能与重击使用真实音效素材。
+
+- [观看120秒V3](previews/stock-video/pingtan-development-120s-v3.mp4)、[演示源码与运行方式](projects/stock-video/projects/pingtan-2025-v3/README.md)
+- [制作要求](projects/stock-video/projects/pingtan-2025-v3/DIRECTOR.md)、[质量检查](projects/stock-video/projects/pingtan-2025-v3/QA.md)、[五处声音试听](projects/stock-video/projects/pingtan-2025-v3/SOUND.md)
+- [30秒V1](previews/stock-video/pingtan-development-30s-v1.mp4)、[60秒V2](previews/stock-video/pingtan-development-60s-v2.mp4)及对应源码均保留；[版本与发布记录](docs/stock-video/PINGTAN_RELEASE_2026-11-12.md)
+
+Git标签`pingtan-v2-60s`指向V1/V2归档快照，`pingtan-v3-120s`指向最新版本；此前航天发展、浙江世宝和幸存者偏差项目继续保留。原曲及独立混音不进入公开仓库，新设备按项目README恢复素材后可重建。
+
+## 航天发展日K动画（保留）
 
 30秒、1080×1920、30fps；2025-01-02—2026-11-11，重点展示商业航天题材主升、连板与分歧、两次顶部统计和后续回撤。
 

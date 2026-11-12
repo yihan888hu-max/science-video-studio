@@ -1,0 +1,15 @@
+{
+  "phase": "pre-push repository update",
+  "date": "2026-11-12",
+  "baseCommit": "53fc41b0434bc9d00790a7c7c22a6d403ca29d8f",
+  "previousVersionArchive": {"commit": "ab2a5ee4f12362c970c0296f905b27499d124ccc", "tag": "pingtan-v2-60s", "isolatedSourceTypeScriptExitCode": 0, "packageValidatedFiles": 188, "packageErrors": []},
+  "checks": [
+    {"command": "npm run check:pingtan-v3", "exitCode": 0, "scope": "Full TypeScript compilation plus V3 data, framing, events, down ranges and original music PCM assertions"},
+    {"command": "python projects/pingtan-2025/research/audit.py", "exitCode": 0, "scope": "V1 data, board counts, market facts, dates, two peaks, timing and framing"},
+    {"command": "python projects/pingtan-2025-v2/research/audit.py", "exitCode": 0, "scope": "V2 data, five peaks, first breaks, lightning, top metrics, timing, framing and original music PCM"},
+    {"command": "python scripts/stock_video/prepare_pingtan_v3_sfx.py", "exitCode": 0, "scope": "Reused verified local asset caches with portable paths; no paid service"}
+  ],
+  "finalVideo": {"durationSeconds": 120, "frames": 3600, "width": 1080, "height": 1920, "fps": 30, "integratedLufs": -10.9, "truePeakDbtp": -2.2, "mediaCheckPass": 10, "mediaCheckWarnings": 1, "mediaCheckFailures": 0},
+  "warning": "No standalone subtitle stream; all editorial text is drawn into the picture",
+  "scopeLimits": "Measurements and sampled final frames are not a claim of full human playback or subjective headphone approval. Raw music and standalone audio caches remain local. Package-level staged snapshot integrity is recorded in root validation-report.json."
+}

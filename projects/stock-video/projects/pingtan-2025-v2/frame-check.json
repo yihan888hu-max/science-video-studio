@@ -1,0 +1,36 @@
+{
+  "status": "completed",
+  "output": null,
+  "dry_run": false,
+  "commands": [
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 0.700 -i out/pingtan-development-60s-v2.mp4 -vf scale=540:-2 -frames:v 1 'out\\pingtan-v2-final_0.700s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 11.333 -i out/pingtan-development-60s-v2.mp4 -vf scale=540:-2 -frames:v 1 'out\\pingtan-v2-final_11.333s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 16.533 -i out/pingtan-development-60s-v2.mp4 -vf scale=540:-2 -frames:v 1 'out\\pingtan-v2-final_16.533s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 18.300 -i out/pingtan-development-60s-v2.mp4 -vf scale=540:-2 -frames:v 1 'out\\pingtan-v2-final_18.300s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 28.100 -i out/pingtan-development-60s-v2.mp4 -vf scale=540:-2 -frames:v 1 'out\\pingtan-v2-final_28.100s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 33.200 -i out/pingtan-development-60s-v2.mp4 -vf scale=540:-2 -frames:v 1 'out\\pingtan-v2-final_33.200s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 36.100 -i out/pingtan-development-60s-v2.mp4 -vf scale=540:-2 -frames:v 1 'out\\pingtan-v2-final_36.100s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 41.733 -i out/pingtan-development-60s-v2.mp4 -vf scale=540:-2 -frames:v 1 'out\\pingtan-v2-final_41.733s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 44.267 -i out/pingtan-development-60s-v2.mp4 -vf scale=540:-2 -frames:v 1 'out\\pingtan-v2-final_44.267s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 48.000 -i out/pingtan-development-60s-v2.mp4 -vf scale=540:-2 -frames:v 1 'out\\pingtan-v2-final_48.000s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 54.967 -i out/pingtan-development-60s-v2.mp4 -vf scale=540:-2 -frames:v 1 'out\\pingtan-v2-final_54.967s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 59.500 -i out/pingtan-development-60s-v2.mp4 -vf scale=540:-2 -frames:v 1 'out\\pingtan-v2-final_59.500s.png'"
+  ],
+  "verified": false,
+  "verification": [],
+  "outputs": [
+    "out\\pingtan-v2-final_0.700s.png",
+    "out\\pingtan-v2-final_11.333s.png",
+    "out\\pingtan-v2-final_16.533s.png",
+    "out\\pingtan-v2-final_18.300s.png",
+    "out\\pingtan-v2-final_28.100s.png",
+    "out\\pingtan-v2-final_33.200s.png",
+    "out\\pingtan-v2-final_36.100s.png",
+    "out\\pingtan-v2-final_41.733s.png",
+    "out\\pingtan-v2-final_44.267s.png",
+    "out\\pingtan-v2-final_48.000s.png",
+    "out\\pingtan-v2-final_54.967s.png",
+    "out\\pingtan-v2-final_59.500s.png"
+  ],
+  "publicationNotes": "Tool installation and user-home paths made portable; measurements, statuses and cue times unchanged."
+}

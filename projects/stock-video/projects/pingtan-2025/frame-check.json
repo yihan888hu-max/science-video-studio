@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "output": null,
+  "dry_run": false,
+  "commands": [
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 0.700 -i out/pingtan-development-2025-now-v1.mp4 -vf 'scale=1280:-2,drawtext=text='\\''00\\:00\\:00.700'\\'':fontfile=C\\\\:/WINDOWS/Fonts/arial.ttf:fontcolor=white:fontsize=h/18:box=1:boxcolor=black@0.55:boxborderw=6:x=8:y=8' -frames:v 1 'out\\pingtan-review_0.700s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 4.800 -i out/pingtan-development-2025-now-v1.mp4 -vf 'scale=1280:-2,drawtext=text='\\''00\\:00\\:04.800'\\'':fontfile=C\\\\:/WINDOWS/Fonts/arial.ttf:fontcolor=white:fontsize=h/18:box=1:boxcolor=black@0.55:boxborderw=6:x=8:y=8' -frames:v 1 'out\\pingtan-review_4.800s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 5.900 -i out/pingtan-development-2025-now-v1.mp4 -vf 'scale=1280:-2,drawtext=text='\\''00\\:00\\:05.900'\\'':fontfile=C\\\\:/WINDOWS/Fonts/arial.ttf:fontcolor=white:fontsize=h/18:box=1:boxcolor=black@0.55:boxborderw=6:x=8:y=8' -frames:v 1 'out\\pingtan-review_5.900s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 7.800 -i out/pingtan-development-2025-now-v1.mp4 -vf 'scale=1280:-2,drawtext=text='\\''00\\:00\\:07.800'\\'':fontfile=C\\\\:/WINDOWS/Fonts/arial.ttf:fontcolor=white:fontsize=h/18:box=1:boxcolor=black@0.55:boxborderw=6:x=8:y=8' -frames:v 1 'out\\pingtan-review_7.800s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 10.600 -i out/pingtan-development-2025-now-v1.mp4 -vf 'scale=1280:-2,drawtext=text='\\''00\\:00\\:10.600'\\'':fontfile=C\\\\:/WINDOWS/Fonts/arial.ttf:fontcolor=white:fontsize=h/18:box=1:boxcolor=black@0.55:boxborderw=6:x=8:y=8' -frames:v 1 'out\\pingtan-review_10.600s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 12.200 -i out/pingtan-development-2025-now-v1.mp4 -vf 'scale=1280:-2,drawtext=text='\\''00\\:00\\:12.200'\\'':fontfile=C\\\\:/WINDOWS/Fonts/arial.ttf:fontcolor=white:fontsize=h/18:box=1:boxcolor=black@0.55:boxborderw=6:x=8:y=8' -frames:v 1 'out\\pingtan-review_12.200s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 19.500 -i out/pingtan-development-2025-now-v1.mp4 -vf 'scale=1280:-2,drawtext=text='\\''00\\:00\\:19.500'\\'':fontfile=C\\\\:/WINDOWS/Fonts/arial.ttf:fontcolor=white:fontsize=h/18:box=1:boxcolor=black@0.55:boxborderw=6:x=8:y=8' -frames:v 1 'out\\pingtan-review_19.500s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 24.200 -i out/pingtan-development-2025-now-v1.mp4 -vf 'scale=1280:-2,drawtext=text='\\''00\\:00\\:24.200'\\'':fontfile=C\\\\:/WINDOWS/Fonts/arial.ttf:fontcolor=white:fontsize=h/18:box=1:boxcolor=black@0.55:boxborderw=6:x=8:y=8' -frames:v 1 'out\\pingtan-review_24.200s.png'",
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -ss 28.800 -i out/pingtan-development-2025-now-v1.mp4 -vf 'scale=1280:-2,drawtext=text='\\''00\\:00\\:28.800'\\'':fontfile=C\\\\:/WINDOWS/Fonts/arial.ttf:fontcolor=white:fontsize=h/18:box=1:boxcolor=black@0.55:boxborderw=6:x=8:y=8' -frames:v 1 'out\\pingtan-review_28.800s.png'"
+  ],
+  "verified": false,
+  "verification": [],
+  "outputs": [
+    "out\\pingtan-review_0.700s.png",
+    "out\\pingtan-review_4.800s.png",
+    "out\\pingtan-review_5.900s.png",
+    "out\\pingtan-review_7.800s.png",
+    "out\\pingtan-review_10.600s.png",
+    "out\\pingtan-review_12.200s.png",
+    "out\\pingtan-review_19.500s.png",
+    "out\\pingtan-review_24.200s.png",
+    "out\\pingtan-review_28.800s.png"
+  ],
+  "publicationNotes": "Tool installation and user-home paths made portable; measurements, statuses and cue times unchanged."
+}

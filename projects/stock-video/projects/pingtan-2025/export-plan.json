@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "output": "out/pingtan-development-2025-now-v1-delivery.mp4",
+  "dry_run": true,
+  "commands": [
+    "ffmpeg-9.0.1-essentials_build\\bin\\ffmpeg.EXE' -hide_banner -loglevel error -nostdin -y -i out/pingtan-development-2025-now-v1.mp4 -vf 'scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1' -c:v libx264 -preset medium -crf 18 -profile:v high -pix_fmt yuv420p -r 30 -x264-params colorprim=bt709:transfer=bt709:colormatrix=bt709 -movflags +faststart -c:a aac -b:a 128k -ar 48000 out/pingtan-development-2025-now-v1-delivery.mp4"
+  ],
+  "verified": false,
+  "verification": [],
+  "encoder": "libx264",
+  "publicationNotes": "Tool installation and user-home paths made portable; measurements, statuses and cue times unchanged."
+}

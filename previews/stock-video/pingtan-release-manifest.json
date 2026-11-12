@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-12",
+  "baseCommit": "53fc41b0434bc9d00790a7c7c22a6d403ca29d8f",
+  "media": [
+    {
+      "version": "v1",
+      "path": "previews/stock-video/pingtan-development-30s-v1.mp4",
+      "bytes": 14774058,
+      "sha256": "f5a888dfef0eddcf0245fb82e4136d18c586b3d35328a6e3b87242fda02a2fde"
+    },
+    {
+      "version": "v1",
+      "path": "previews/stock-video/pingtan-v1-contact.jpg",
+      "bytes": 391305,
+      "sha256": "0dead1111cbb7d7af52f8c716cce290e28a8f23bb22ade902294bc81acef612b"
+    },
+    {
+      "version": "v2",
+      "path": "previews/stock-video/pingtan-development-60s-v2.mp4",
+      "bytes": 19070614,
+      "sha256": "546604ff447285858b268b01fedda90a6fedadf1302b6969b23ee561444293de"
+    },
+    {
+      "version": "v2",
+      "path": "previews/stock-video/pingtan-v2-contact.jpg",
+      "bytes": 480840,
+      "sha256": "da7b6ee5ef6ea807da84674f8c1c24a315f6629cfe924217ae8fd9779da244e7"
+    }
+  ]
+}

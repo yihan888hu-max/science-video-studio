@@ -1,0 +1,42 @@
+{
+  "requestedStart": "2025-01-01",
+  "requestedEnd": "2026-11-11",
+  "actualLast": "2026-11-11",
+  "identity": {
+    "symbol": "sz000592",
+    "name": "平潭发展",
+    "quoteTimestamp": "20261112111124"
+  },
+  "requests": [
+    {
+      "path": "projects\\pingtan-2025\\research\\raw\\tencent-2024-qfq.json",
+      "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz000592,day,2024-01-01,2024-12-31,320,qfq",
+      "cacheReused": false
+    },
+    {
+      "path": "projects\\pingtan-2025\\research\\raw\\tencent-2024-bfq.json",
+      "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz000592,day,2024-01-01,2024-12-31,320,",
+      "cacheReused": false
+    },
+    {
+      "path": "projects\\pingtan-2025\\research\\raw\\tencent-2025-qfq.json",
+      "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz000592,day,2025-01-01,2025-12-31,320,qfq",
+      "cacheReused": false
+    },
+    {
+      "path": "projects\\pingtan-2025\\research\\raw\\tencent-2025-bfq.json",
+      "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz000592,day,2025-01-01,2025-12-31,320,",
+      "cacheReused": false
+    },
+    {
+      "path": "projects\\pingtan-2025\\research\\raw\\tencent-2026-qfq.json",
+      "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz000592,day,2026-01-01,2026-12-31,320,qfq",
+      "cacheReused": false
+    },
+    {
+      "path": "projects\\pingtan-2025\\research\\raw\\tencent-2026-bfq.json",
+      "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz000592,day,2026-01-01,2026-12-31,320,",
+      "cacheReused": false
+    }
+  ]
+}

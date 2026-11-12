@@ -1,0 +1,18 @@
+{
+  "assets": [
+    {
+      "name": "User-supplied music",
+      "originalFilename": "01 清明上河图.mp3",
+      "path": "local-media/pingtan/qingming.mp3",
+      "sha256": "d010696aa1abbe0f049ac215d2b93818b8330b6519676cda9ed827ddae241c39",
+      "redistributed": false
+    }
+  ],
+  "commands": [
+    "npm run prepare:pingtan",
+    "npm run rebuild:pingtan-v2",
+    "npm run check:pingtan-v2",
+    "npm run render:pingtan-v2"
+  ],
+  "note": "Restore your own supplied MP3 before rebuilding. Mac may use python3. Audio caches, raw samples and standalone mixed WAVs are not in Git."
+}

@@ -1,7 +1,8 @@
 {
   "ok": true,
-  "validated_files": 127,
+  "validated_files": 188,
   "declared_assets": 6,
+  "hash_mode": "Git LF text blobs; binary files byte-exact",
   "local_assets_present": 0,
   "require_assets": false,
   "errors": [],

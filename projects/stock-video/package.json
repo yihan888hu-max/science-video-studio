@@ -45,7 +45,14 @@
     "render:v5": "remotion render ShibaoMarket30 out/zhejiang-shibao-market-30s-v5.mp4 --codec=h264 --crf=18 --concurrency=4",
     "rebuild:aerospace": "node scripts/stock_video/run-python.mjs scripts/stock_video/build.py projects/aerospace-2025/brief.json",
     "render:aerospace": "remotion render Aerospace2025 out/aerospace-development-2025-now-v1.mp4 --codec=h264 --crf=18 --concurrency=4",
-    "check:aerospace": "tsc --noEmit && eslint src/StockMotionVideo.tsx src/Root.tsx && node scripts/stock_video/run-python.mjs projects/aerospace-2025/research/audit.py"
+    "check:aerospace": "tsc --noEmit && eslint src/StockMotionVideo.tsx src/Root.tsx && node scripts/stock_video/run-python.mjs projects/aerospace-2025/research/audit.py",
+    "prepare:pingtan": "node scripts/stock_video/run-python.mjs scripts/stock_video/prepare_music.py",
+    "rebuild:pingtan": "node scripts/stock_video/run-python.mjs scripts/stock_video/build.py projects/pingtan-2025/brief.json",
+    "check:pingtan": "tsc --noEmit && node scripts/stock_video/run-python.mjs projects/pingtan-2025/research/audit.py",
+    "render:pingtan": "remotion render Pingtan2025 out/pingtan-development-2025-now-v1-final.mp4 --codec=h264 --crf=18 --concurrency=4 --image-format=png --color-space=bt709 --pixel-format=yuv420p",
+    "rebuild:pingtan-v2": "node scripts/stock_video/run-python.mjs scripts/stock_video/build_pingtan_v2.py",
+    "check:pingtan-v2": "tsc --noEmit && node scripts/stock_video/run-python.mjs projects/pingtan-2025-v2/research/audit.py",
+    "render:pingtan-v2": "remotion render Pingtan60V2 out/pingtan-development-60s-v2.mp4 --codec=h264 --crf=18 --concurrency=4 --image-format=png --color-space=bt709 --pixel-format=yuv420p"
   },
   "allowScripts": {
     "esbuild": false

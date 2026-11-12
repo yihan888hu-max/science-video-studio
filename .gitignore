@@ -31,6 +31,9 @@ projects/**/assets/audio/
 
 # Authored stock-video release media (user-authorized update, 2026-11-12)
 !previews/stock-video/aerospace-development-2025-now-v1.mp4
+!previews/stock-video/pingtan-development-30s-v1.mp4
+!previews/stock-video/pingtan-development-60s-v2.mp4
+!previews/stock-video/pingtan-development-120s-v3.mp4
 !projects/stock-video/public/aerospace-2025-v1/mix.wav
 !projects/stock-video/public/shibao-v2/mix.wav
 !projects/stock-video/public/shibao-v4/mix.wav
@@ -39,3 +42,7 @@ projects/**/assets/audio/
 projects/stock-video/out/
 projects/stock-video/dist/
 .DS_Store
+# Local installed research tools and private working notes
+.agents/skills/sound-effects/
+.learnings/
+skills-lock.json

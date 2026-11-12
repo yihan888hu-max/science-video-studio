@@ -12,12 +12,18 @@ manifest_file = root / "FILE_MANIFEST.json"
 if not manifest_file.exists():
     raise SystemExit("FILE_MANIFEST.json is required")
 entries = json.loads(manifest_file.read_text(encoding="utf-8"))["files"]
+text_suffixes = {".py", ".json", ".md", ".html", ".svg", ".ts", ".tsx", ".mjs", ".yaml", ".yml", ".csv", ".js", ".css", ".txt"}
 for entry in entries:
     path = (root / entry["path"]).resolve()
     if not path.is_relative_to(root) or not path.is_file():
         errors.append("Missing or unsafe file: " + entry["path"])
         continue
     data = path.read_bytes()
+    # The manifest describes Git's LF text blobs. Older Windows checkouts may
+    # retain CRLF until a fresh checkout; binary hashes remain byte-exact.
+    is_text = path.suffix in text_suffixes or path.name in {".gitignore", ".gitattributes", ".prettierrc"}
+    if is_text:
+        data = data.replace(b"\r\n", b"\n")
     if hashlib.sha256(data).hexdigest() != entry["sha256"]:
         errors.append("Changed packaged file: " + entry["path"])
     if path.suffix in {".py", ".json", ".md", ".html", ".svg", ".ts", ".tsx", ".mjs", ".yaml", ".yml", ".csv"}:
@@ -46,6 +52,7 @@ for asset in assets:
 if args.require_assets and missing:
     errors.append("Missing local assets: " + ", ".join(missing))
 report = {"ok": not errors, "validated_files": len(entries), "declared_assets": len(assets),
+          "hash_mode": "Git LF text blobs; binary files byte-exact",
           "local_assets_present": len(assets)-len(missing), "require_assets": args.require_assets,
           "errors": errors, "phase": "pre-push package validation",
           "scope": "Source/package validation; per-project render and AV checks are recorded separately"}

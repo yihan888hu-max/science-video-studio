@@ -1,0 +1,15 @@
+{
+  "baseCommit": "53fc41b0434bc9d00790a7c7c22a6d403ca29d8f",
+  "sourceMusicSha256": "d010696aa1abbe0f049ac215d2b93818b8330b6519676cda9ed827ddae241c39",
+  "musicExcerptSeconds": [
+    20.03,
+    50.03
+  ],
+  "format": [
+    1080,
+    1920,
+    30,
+    900
+  ],
+  "asOf": "2026-11-11"
+}

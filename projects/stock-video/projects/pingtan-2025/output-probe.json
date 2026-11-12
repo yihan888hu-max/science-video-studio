@@ -1,0 +1,61 @@
+{
+  "file": "out/pingtan-development-2025-now-v1.mp4",
+  "format": "mov,mp4,m4a,3gp,3g2,mj2",
+  "duration": 30.016,
+  "size_bytes": 16430195,
+  "bitrate": 4379049,
+  "video": {
+    "codec": "h264",
+    "profile": "High",
+    "width": 1080,
+    "height": 1920,
+    "display_aspect": "9:16",
+    "fps": 30.0,
+    "r_frame_rate": "30/1",
+    "avg_frame_rate": "30/1",
+    "variable_frame_rate_suspected": false,
+    "pix_fmt": "yuvj420p",
+    "bit_depth": 8,
+    "hdr": false,
+    "hdr_signal": false,
+    "bt2020_or_hdr": false,
+    "hdr_format": null,
+    "dolby_vision": null,
+    "color_space": "bt470bg",
+    "color_primaries": null,
+    "color_transfer": null,
+    "color_range": "pc",
+    "rotation": 0,
+    "nb_frames": 900,
+    "duration": 30.0,
+    "start_time": 0.0,
+    "bitrate": 4054337
+  },
+  "audio": {
+    "codec": "aac",
+    "channels": 2,
+    "channel_layout": "stereo",
+    "sample_rate": 48000,
+    "bitrate": 317375,
+    "duration": 30.016,
+    "start_time": 0.0
+  },
+  "subtitle_streams": 0,
+  "data_streams": 0,
+  "chapters": [],
+  "tags": {
+    "comment": "Made with Remotion 4.0.541"
+  },
+  "subtitle_stream_details": [],
+  "audio_streams": [
+    {
+      "index": 0,
+      "codec": "aac",
+      "channels": 2,
+      "channel_layout": "stereo",
+      "sample_rate": 48000,
+      "language": "und",
+      "title": null
+    }
+  ]
+}

@@ -9,3 +9,8 @@ __pycache__/
 .env.*
 !.env.example
 public/**/mix-raw.wav
+local-media/
+public/pingtan-2025-v1/*.wav
+public/pingtan-2025-v2/*.wav
+public/pingtan-2025-v3/*.wav
+projects/pingtan-2025-v3/research/mixkit-*.html

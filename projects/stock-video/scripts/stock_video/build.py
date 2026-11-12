@@ -59,7 +59,7 @@ def build(path):
  critical={i for i,m in enumerate(market) if m['isUp'] or m['isDown'] or dates[i] in c['overrides']}
  for w in c['focus']:
   ix=[i for i in range(n) if w['from']<=dates[i]<=w['to']];assert not focus.intersection(ix);focus.update(ix)
-  base={i:(8 if i in critical else 4)+c['extraHolds'].get(dates[i],0) for i in ix};dur.update(allocate(ix,base,w['frames']))
+  base={i:max(c.get('minimumCandleFrames',4),(8 if i in critical else 4))+c['extraHolds'].get(dates[i],0) for i in ix};dur.update(allocate(ix,base,w['frames']))
  outside=[i for i in range(n) if i not in focus];outside_budget=end-intro-sum(dur.values())
  rare=sorted([i for i in outside if abs(market[i]['change'])>.09],key=lambda i:abs(market[i]['change']*ret5[i]),reverse=True)[:8]
  dur.update(allocate(outside,{i:6 for i in rare},outside_budget))
@@ -71,6 +71,20 @@ def build(path):
   if slow and (i in critical or i in rare):events.append(dict(index=i,date=dates[i],start=f,frame=f+2,end=f+length,changeDay=market[i]['change'],label=market[i]['label'],peak=any(p['index']==i for p in peaks)))
   f+=length
  assert f==end
+ # Snap selected completed candles to the supplied music's estimated grid,
+ # moving only the shared boundary and preserving minimum complete holds.
+ music=c.get('music');beat_sync=[]
+ if music:
+  beat=music['beatPeriodSeconds']*c['fps'];phase=music.get('phaseSeconds',0)*c['fps']
+  for k,s in enumerate(segments):
+   if k==0 or not s['critical'] or s['index'] not in critical:continue
+   completion=s['start']+2;target=round(round((completion-phase)/beat)*beat+phase);delta=target-completion
+   prevseg=segments[k-1];previous_min=6 if prevseg['critical'] else 1
+   current_min=48 if any(p['index']==s['index'] for p in peaks) else 6
+   if prevseg['end']-prevseg['start']+delta>=previous_min and s['end']-s['start']-delta>=current_min:
+    prevseg['end']+=delta;s['start']+=delta
+   beat_sync.append(dict(date=dates[s['index']],completionFrame=s['start']+2,targetFrame=target,errorFrames=s['start']+2-target))
+  events=[dict(index=s['index'],date=dates[s['index']],start=s['start'],frame=s['start']+2,end=s['end'],changeDay=market[s['index']]['change'],label=market[s['index']]['label'],peak=any(p['index']==s['index'] for p in peaks)) for s in segments if s['critical'] and (s['index'] in critical or s['index'] in rare)]
  for p in peaks:
   seg=next(s for s in segments if s['index']==p['index']);p.update(frame=seg['start']+2,end=seg['end'])
  frames=[];x=0.;cy=-cl[0]*28;sx=4.;sy=9.;anchor=760.;bank=0.;red=0.;green=0.;starts=[s['start'] for s in segments];running_hi=float(raw[0][3]);wave_low=peaks[0]['low'];wave_start=peaks[0]['start']
@@ -97,7 +111,7 @@ def build(path):
   target_red=expansion*(1-target_green)*(.9 if change5>=-.03 else .35)
   red+=(target_red-red)*.12;green+=(target_green-green)*.16
   frames.append(dict(index=idx,settledIndex=settled,price=price,growth=growth,phase=phase,cx=x,cy=cy,sx=sx,sy=sy,anchorX=anchor,bank=bank,power=power,impact=impulse,red=red,green=green,change5=change5))
- plan=dict(frames=frames,events=events,segments=segments,introEnd=intro,playEnd=end,minLow=min(float(r[4]) for r in raw),maxHigh=max(float(r[3]) for r in raw))
+ plan=dict(frames=frames,events=events,segments=segments,beatSync=beat_sync,introEnd=intro,playEnd=end,minLow=min(float(r[4]) for r in raw),maxHigh=max(float(r[3]) for r in raw))
  film=dict(meta=c,data=raw,market=market,catalysts=c['catalysts'],peaks=peaks,plan=plan)
  save(ROOT/f'src/stock-videos/{c["id"]}.json',film)
  with (folder/'timeline.csv').open('w', encoding='utf-8', newline='') as fd:
@@ -114,21 +128,34 @@ def build(path):
   if s['growth']<1 and s['settledIndex']>=s['index'] and s['index']>0:errors.append(f'Premature completed label {j}')
  save(folder/'validation.json',dict(errors=errors,sessions=n,first=dates[0],last=dates[-1],frames=total,visibleSegments=len(segments),events=len(events),peaks=peaks,checks=['OHLC order','previous close','message publication','caption evidence','monotonic timeline','completed candle labels','active candle fit','peak calculations']))
  assert not errors,errors[:10]
- audio(ROOT/f'public/{c["id"]}',events,total/c['fps'],c['fps'])
+ audio(ROOT/f'public/{c["id"]}',events,total/c['fps'],c['fps'],music)
  print(json.dumps(dict(film=c['id'],sessions=n,segments=len(segments),events=len(events),peaks=peaks),ensure_ascii=False,indent=2))
 
-def audio(folder,events,duration,fps):
+def audio(folder,events,duration,fps,music=None):
  folder.mkdir(parents=True,exist_ok=True);sr=48000;count=round(sr*duration);rng=random.Random(5472025);L=array.array('f',[0])*count;R=array.array('f',[0])*count;duck=array.array('f',[1])*count
  for e in events:
   for j in range(int(sr*.36)):
    k=round(e['frame']/fps*sr)+j
    if 0<=k<count:duck[k]=min(duck[k],.18+.82*(j/(sr*.36))**2)
+ music_samples=None
+ if music:
+  with wave.open(str(ROOT/music['file']),'rb') as w:
+   assert w.getsampwidth()==2 and w.getnchannels()==2,'Music must decode to stereo PCM16 WAV'
+   music_sr=w.getframerate();music_samples=array.array('h',w.readframes(w.getnframes()))
+  assert (music['offsetSeconds']+duration)*music_sr*2<=len(music_samples),'Music selection exceeds file duration'
  for i in range(count):
   t=i/sr;fade=cap(min(t/.5,(duration-t)/.9),0,1);base=[55,65.406,49,73.416][min(3,int(t/(duration/4)))];phase=2*math.pi*base*t;beat=t%.5
   # Quiet electro pulse, with deep automatic space for the foreground signal.
   bed=.018*math.sin(phase+.7*math.sin(phase*2.01))+.008*math.sin(phase*4.005)
   kick=.025*math.sin(2*math.pi*(47*beat+1.5*(1-math.exp(-beat*38))))*math.exp(-beat*35)
-  v=(bed+kick)*fade*duck[i];L[i]=v;R[i]=v+.003*math.sin(phase*2.003)*fade*duck[i]
+  if music_samples is not None:
+   at=(music['offsetSeconds']+t)*music_sr;j=int(at);fract=at-j
+   for channel,track in ((0,L),(1,R)):
+    v=(music_samples[j*2+channel]*(1-fract)+music_samples[(j+1)*2+channel]*fract)/32768
+    track[i]=v*music['gain']*fade*duck[i]
+  else:
+   v=(bed+kick)*fade*duck[i];L[i]=v;R[i]=v+.003*math.sin(phase*2.003)*fade*duck[i]
+ bedL=array.array('f',L) if music else None;bedR=array.array('f',R) if music else None
  for e in events:
   onset=e['frame']/fps;peak=e['peak'];up=e['changeDay']>=0 or peak;carrier=1760 if peak else (1320 if up else 660);amp=1.25 if peak else 1
   for j in range(round(sr*.40)):
@@ -149,12 +176,20 @@ def audio(folder,events,duration,fps):
    if 0<=k<count:
     v=.045*math.sin(2*math.pi*(700*t+9000*t*t))*(t/.045)**2;L[k]+=v;R[k]+=v
  maximum=max(max(map(abs,L)),max(map(abs,R)));gain=min(1,.92/maximum)
+ if music:
+  for filename,a,b in [('music-bed.wav',bedL,bedR),('foreground.wav',array.array('f',(v-bedL[i] for i,v in enumerate(L))),array.array('f',(v-bedR[i] for i,v in enumerate(R))))]:
+   with wave.open(str(folder/filename),'wb') as w:
+    w.setparams((2,2,sr,count,'NONE','not compressed'));payload=bytearray()
+    for l,r in zip(a,b):payload.extend(struct.pack('<hh',round(cap(l*gain,-1,1)*32767),round(cap(r*gain,-1,1)*32767)))
+    w.writeframes(payload)
  with wave.open(str(folder/'mix-raw.wav'),'wb') as w:
   w.setparams((2,2,sr,count,'NONE','not compressed'));b=bytearray()
   for l,r in zip(L,R):b.extend(struct.pack('<hh',round(l*gain*32767),round(r*gain*32767)))
   w.writeframes(b)
- subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-i',str(folder/'mix-raw.wav'),'-af','loudnorm=I=-15:TP=-1.2:LRA=9','-ar',str(sr),'-y',str(folder/'mix.wav')],check=True)
+ subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-i',str(folder/'mix-raw.wav'),'-af','loudnorm=I=-15:TP=-2:LRA=9' if music else 'loudnorm=I=-15:TP=-1.2:LRA=9','-ar',str(sr),'-y',str(folder/'mix.wav')],check=True)
  save(folder/'audio-design.json',dict(originalSynthesis=True,sampleRate=sr,foregroundToBed='Layered metal/FM + digital double-ping + sub; bed duck to 18% at cue',cueFrames=[e['frame'] for e in events],normalization='I=-15 LUFS TP=-1.2 dBTP',rawPeak=maximum))
+ if music:
+  save(folder/'audio-design.json',dict(originalForegroundSynthesis=True,music=music,sampleRate=sr,foregroundToBed='User music with transient duck to 18%; original electronic impact at candle completion',cueFrames=[e['frame'] for e in events],normalization='I=-15 LUFS TP=-2 dBTP',rawPeak=maximum,subjectiveListening='not performed'))
 
 if __name__=='__main__':
  parser=argparse.ArgumentParser();parser.add_argument('brief',type=Path);args=parser.parse_args();build(args.brief)
